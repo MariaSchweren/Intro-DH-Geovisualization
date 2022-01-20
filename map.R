@@ -1,5 +1,6 @@
 library(shiny)
 library(leaflet)
+library(osrm)
 
 m <- leaflet()
 m <- setView(m, lng=13.5, lat=50.95, zoom=8)
@@ -10,13 +11,18 @@ lng = c(14.2678, 14.2445, 14.1611, 14.1385, 14.1227, 14.1481, 14.1025, 14.1842, 
 
 df <- data.frame(lat, lng)
 
-m <- addMarkers(m, data=df, lat=df$lat, lng=df$lng)
-m <- addPolylines(m, data=df, lat=df$lat, lng=df$lng)
+m <- addMarkers(m, lat=df$lat, lng=df$lng)
+#m <- addPolylines(m, lat=df$lat, lng=df$lng)
 
-ui <- fluidPage(
-  leafletOutput("map", width=800, height=800),
-  sliderInput("time", "Time test", min=0, max=10, value=5)
-)
+for(i in 1:(nrow(df)-1)) {
+  route <- osrmRoute(src=c(df$lng[i], df$lat[i]), dst=c(df$lng[i+1], df$lat[i+1]))
+  m <- addPolylines(m, route$lon,route$lat)
+}
+  
+  ui <- fluidPage(
+    leafletOutput("map", width=800, height=800),
+    sliderInput("time", "Time test", min=0, max=10, value=5)
+  )
 
 server <- function(input, output, session) {
   output$map <- renderLeaflet(m)
