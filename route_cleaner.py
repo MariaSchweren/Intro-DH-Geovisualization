@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from termcolor import colored
 
-file_name = "formatted2.csv"
+file_name = "formatted.csv"
 df = pd.read_csv(file_name)  # create dataframe from csv
 
 try:
