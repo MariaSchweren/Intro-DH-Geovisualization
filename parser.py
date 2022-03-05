@@ -2,82 +2,63 @@ import re
 
 import pandas as pd
 
-data = []
-
 with open("text_extracts_aussenlager.csv", "r", encoding="utf8") as file:
     text = file.read()
 
-text = text.replace("­", "")
-text = text.split("Außenlager KZ")
+text = text.replace("­", "")  # remove soft hyphen tokens as they break the parser
 
-for entry in text[1:-1]:
-    data.append("Außenlager KZ" + entry)
+data = []
+splits = ["Außenlager KZ"]  # this list must include all possible types (excluding location name) from the first line of each entry (bold font in PDF) in order of appearance
+previous = None
 
-text = text[-1]
-text = text.split("Außenlager des KZ")
-
-data.append("Außenlager KZ" + text[0])
-
-for entry in text[1:-1]:
-    data.append("Außenlager des KZ" + entry)
-
-text = text[-1]
-text = text.split("Transport zwischen")
-
-data.append("Außenlager des KZ" + text[0])
-
-for entry in text[1:]:
-    data.append("Transport zwischen" + entry)
+"""
+Section for separating the individual entries for further processing.
+"""
+for split_ in splits:
+    text = text.split(split_)
+    if previous is not None:  # skip first iteration
+        data.append(previous + text[0])
+    for entry in text[1:-1]:  # omit last element in slice as it contains the rest of source text
+        data.append(split_ + entry)  # add separator + entry to list because split() removes separator
+    text = text[-1]
+    previous = split_  # save current separator for combination with remaining leading element after split in next iteration
+data.append(splits[-1] + text)  # add last entry as it isn't included in inner loop
 
 df = pd.DataFrame()
 
+"""
+Section for separating the rows in each entry into their respective column in the .csv.
+"""
 for entry in data:
-    entries = {}
-    entries_num = 0
+    rows_dict = {}
     key = ""
     value = ""
-    hyphen_flag = False
-    for line in entry.splitlines():
-        if hyphen_flag:
-            s = re.split(r"[ ]{2,}", line)
-            entries["Name"] = name_tmp + s[0]
-            entries["Ort"] = loc_tmp
-            if len(s) > 1:
-                value += s[1]
-            hyphen_flag = False
-            continue
-        if re.search(r"\w(-)?(-)?[ ]{2,}|Außenlager KZ \w+(-\w+)? \w", line):
-            entries_num += 1
-            if entries_num > 2:
-                value = " ".join(value.split()).strip()
-                entries[key] = value
-                value = ""
-            if re.search(r"Außenlager KZ \w+(-\w+)? \w", line):
-                s[0] = " ".join(line.split(" ")[:3])
-                s[1] = " ".join(line.split(" ")[3:])
+    for counter, line in enumerate(entry.splitlines()):  # split text on \n
+        if re.search(r"\w(-)?[ ]{2,}", line):  # if line contains character followed by two whitespaces (with potential hyphen inbetween)
+            split_ = re.split(r"[ ]{2,}", line)  # split the line on the whitespaces (without preceding character as it would get removed)
+            """
+            The if statement below adds the previously parsed lines to the dictionary.
+            Iteration 1 is skipped as its handled separately below and Iteration 2 is skipped as well because Iteration
+            1 doesn't add to the key/value pair (would add a blank entry otherwise).
+            """
+            if counter > 1:
+                value = " ".join(
+                    value.split()).strip()  # merge lines after stripping whitespaces in case the source entry consisted of multiple lines
+                rows_dict[key] = value  # add to dictionary
+                value = ""  # reset value because its only modified by appending
+            if counter == 0:
+                rows_dict["Name"] = split_[0]
+                rows_dict["Ort"] = split_[1]
             else:
-                s = re.split(r"[ ]{2,}", line)
-            if entries_num == 1:
-                if re.search(r"\w-[ ]{2,}", line):
-                    name_tmp = s[0][:-1]
-                    loc_tmp = s[1]
-                    hyphen_flag = True
-                elif "Transport zwischen" in line:
-                    entries["Name"] = "Transport"
-                    entries["Ort"] = s[1]
-                else:
-                    entries["Name"] = s[0]
-                    entries["Ort"] = s[1]
-            else:
-                key = s[0]
-                value += s[1]
-        elif entries_num == 1:
-            entries["Ort"] += line
-            entries["Ort"] = " ".join(entries["Ort"].split())
+                key = split_[0]
+                value += split_[1]
         else:
             value += line
-    df = df.append(entries, ignore_index=True)
+    df = df.append(rows_dict, ignore_index=True)
 
+"""
+Section for merging columns with the same meaning but different names.
+"""
 for index, row in df.iterrows():
     if pd.isna(row["Betreiber"]):
         if pd.notna(row["Betrieb des Rüstungskonzerns"]):
@@ -111,11 +92,10 @@ for index, row in df.iterrows():
         elif pd.notna(row["Evakuierung"]):
             df.loc[index, "Verlauf/Orte"] = row["Evakuierung"]
 
-df = df.fillna("Nicht bekannt.")
-df = df.drop(61)
+df = df.fillna("Nicht bekannt.")  # format empty values
 
 df = df.drop(["Betrieb des Rüstungskonzerns", "Rückstellungen", "Verlauf/Orte/Todesopfer", "Orte", "Besonderheiten",
               "Standort", "Überstellungen", "Zugänge aus anderen Lager", "Auflösung", "Transport",
-              "Weiterer Arbeitseinsatz", "Bestehen des Lagers", "Quellen"], axis="columns")
+              "Weiterer Arbeitseinsatz", "Bestehen des Lagers", "Quellen"], axis="columns")  # remove merged columns
 
 df.to_csv("formatted.csv", index=False)

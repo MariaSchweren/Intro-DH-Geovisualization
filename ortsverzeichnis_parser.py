@@ -3,7 +3,7 @@ import re
 with open("Ortsverzeichnis.csv", mode="r", encoding="utf8") as file:
     text = file.read()
 
-remove_parentheses = True
+remove_parentheses = True  # if True the text in parentheses behind the location names will be removed
 
 with open("ortsverzeichnis.txt", mode="w", encoding="utf8") as file:
     start = False  # for start condition
@@ -18,5 +18,5 @@ with open("ortsverzeichnis.txt", mode="w", encoding="utf8") as file:
                 if s[0] and "Stadt/Gemeinde" not in s[0]:  # write to file if not empty and relevant
                     location = s[0]
                     if remove_parentheses:
-                        location = re.sub(r"\([^()]*\)", "", location)
+                        location = re.sub(r"\([^()]*\)", "", location)  # delete text between parentheses
                     file.write(location.strip() + "\n")
