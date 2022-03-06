@@ -28,7 +28,9 @@ for index, row in df.iterrows():  # iterate each row of the source data
             except ValueError:
                 print("Enter a valid string.")
         print("###################")
+        print("Evakuierung: " + row["Evakuierung"])
         print("Verlauf/Orte: " + row["Verlauf/Orte"])
+        print("Ende der Evakuierung: " + row["Ende der Evakuierung"])
         print("###################")
         print(colored("Enter 'n' to finish route", "red"))
         route = []

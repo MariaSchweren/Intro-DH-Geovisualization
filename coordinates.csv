@@ -118,7 +118,7 @@
 171;Dittersbach,;Dittersbach,;;;Ortsgrenze Neuhausen/Erzgeb.;;
 172;Dittmannsdorf;Dittmannsdorf;50.7799,13.0497;Q1230399;;(b. Gronau);
 173;Döbeln;Bahnhof Gärtitz;;Q29587240;;(Sandgrube Gärtitz);
-174;Döbeln;Döbeln;51.119444444444,13.112777777778;Q71163;;(Stadt);
+174;Döbeln;Döbeln Stadt;51.119444444444,13.112777777778;Q71163;;(Stadt);
 175;Dobra;Dobra;51.0137,14.02731;Q1233338;;;
 176;Dommitzsch;Dommitzsch;51.639444444444,12.8825;Q12045;;;
 177;Dorfchemnitz;Dorfchemnitz;50.663611111111,12.836388888889;Q1243980;;;
@@ -192,9 +192,9 @@
 255;Freital;Freital;51.016666666667,13.65;Q5870;;;
 256;Freystadt;Kożuchów;51.75,15.6;Q142101;;(Kozuchöw);
 257;Friedebach;Friedebach;50.7258,13.4511;Q1456455;;(b.;Sayda)
-258;Friedersdorf;Friedersdorf;51.096,14.869;Q1417551;;(b.;Görlitz)
+258;Friedersdorf/G.;Friedersdorf;51.096,14.869;Q1417551;;(b.;Görlitz)
 259;Friedersdorf;Friedersdorf;50.8444,13.5214;Q2696708;;(b.;Pretzschendorf)
-352;Friedersdorf;Friedersdorf;51.096,14.869;Q1417551;;(b.;Görlitz)
+352;Friedersdorf/G.;Friedersdorf;51.096,14.869;Q1417551;;(b.;Görlitz)
 353;Friedersdorf;Friedersdorf;50.8444,13.5214;Q2696708;;(b.;Pretzschendorf)
 260;fürstenau;Fürstenau;50.7375,13.8319;Q1483014;;(b.;Geising)
 355;Fürstenwalde;Fürstenwalde;50.7608,13.8675;Q1483535;;(b.;Geising)
@@ -257,6 +257,7 @@
 434;Grünhain;Grünhain;50.578611111111,12.808888888889;Q1552242;;;
 435;Grünhainichen;Grünhainichen;50.7675,13.153888888889;Q57776;;;
 436;Gunzen;Gunzen;50.355,12.3344;Q1555079;;;
+2001;Gusen;Gusen concentration camp;48.25701,14.464133;;;
 437;Gutenfürst;Gutenfürst;50.419082,11.964484;;;;
 440;Hadmersleben;Hadmersleben;51.991944444444,11.301111111111;Q673201;;(pr.;Sachsen)
 441;Haid;Bor u Tachova;49.711710233,12.775216037;;;(Bor;u
@@ -374,7 +375,7 @@
 599;Leipzig-Schönau;Leipzig-Schönau (ATG) concentration camp;51.299999,12.333299;;;;
 601;Leipzig-Schönefeld;Schönefeld;51.3597,12.4104;;;;
 587;Leipzig,;Leipzig Hauptbahnhof;51.34527777777778,12.382222222222222;;Bahn;;
-591;Leipzig,;Leipzig;51.34,12.375;;Stadtmitte;;
+591;Leipzig,;Leipzig Mitte;51.34,12.375;;Stadtmitte;;
 592;Leipzig,;Torgauer Platz;;;Torgauer Straße;;
 603;Leitmeritz;Litoměřice;50.53355947692,14.131899491403;;;(Litom&fice);
 611;Lengenfeld/V.;Lengenfeld;50.566666666667,12.366666666667;;;;
@@ -558,6 +559,7 @@
 859;Rattwitz;Rattwitz/Ratarjecy;51.183519,14.390443;;;(b.;Bautzen)
 860;Rauscha;Ruszów, Lower Silesian Voivodeship;51.40055556,15.18305556;Q7382740;;(Ruszöw);
 861;Rautenkranz;Morgenröthe-Rautenkranz;50.45,12.516666666667;;;;
+2000;Ravensbrück;Ravensbrück;53.1929,13.1621;;;
 862;Regensburg;Regensburg;49.016666666666666,12.083333333333334;;;(Bayern);
 863;Rehefeld;Jagdschloss Rehefeld;50.7305,13.7025;;;;
 864;Rehefeld-Zaunhaus;Rehefeld-Zaunhaus;50.730555555556,13.7;Q2138947;;;
@@ -565,8 +567,8 @@
 866;Reichenau;Reichenau;50.7931,13.575;;;(heute;Hartsmannsdorf-
 868;Reichenau;Reichenau;50.7931,13.575;;;(Rychnov;u
 ;;;;;;;
-871;Reichenbach;Reichenbach;;;;(b.;Waldheim)
-872;Reichenbach/V.;Reichenbach/V.;;;;;
+871;Reichenbach;Reichenbach;51.0463,13.0899;;(b.;Waldheim)
+872;Reichenbach/V.;Reichenbach/V.;50.6175,12.2990;;;
 873;Reichenberg;Liberec;50.7699972,15.0584492;;;(Liberec);
 874;Reichenbrand;Reichenbrand;50.8125,12.8278;Q1069545;;(b.;Chemnitz)
 875;Reichwalde;Reichwalde;51.380555555556,14.6625;;;;
@@ -617,13 +619,13 @@
 930;Schlesiersee;Schlesiersee I concentration camp;51.8833,16.066699;;;(Stawa);
 931;Schlieben;Berga concentration camp;51.73333333,13.38333333;;;(pr.;Sachsen)
 ;;;51.716701,13.383299;;;;
-932;Schmiedeberg;Schmiedeberg;50.8375,13.675277777778;;;(b.;Dippoldiswalde)
+932;Schmiedeberg/D.;Schmiedeberg;50.8375,13.675277777778;;;(b.;Dippoldiswalde)
 933;Schmiedeberg;Kovářská;50.438321578247,13.053974118967;;;(Kovärskä);
 934;Schmorkau;Schmorkau;51.3082,13.144;;;;
 935;Schöna;Schöna;51.39194444444445,13.091388888888888;;;(b.;Cavertitz)
 936;Schönbach/V.;Schönbach (Neumark);50.651936,12.333746;;;;
 937;Schönebeck/Elbe;Schönebeck (Elbe);52.016666666667,11.75;;;(pr.;Sachsen)
-938;Schönfeld;Schönfeld;50.7842,13.6439;;;(b.;Dippoldiswalde)
+938;Schönfeld/D.;Schönfeld;50.7842,13.6439;;;(b.;Dippoldiswalde)
 939;Schönfeld;Schönfeld;51.303888888889,13.707777777778;;;(b.;Radeburg)
 940;Schönheide;Schönheide concentration camp;50.5,12.5333;;;;
 942;Schönlinde;Krásná Lípa;50.913102896533,14.510107117856;;;(Krasna;Lipa/Böhmen)
