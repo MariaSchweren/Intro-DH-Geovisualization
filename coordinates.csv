@@ -117,7 +117,7 @@
 170;Dittersbach;Dittersbach;;;;;
 171;Dittersbach,;Dittersbach,;;;Ortsgrenze Neuhausen/Erzgeb.;;
 172;Dittmannsdorf;Dittmannsdorf;50.7799,13.0497;Q1230399;;(b. Gronau);
-173;Döbeln;Bahnhof Gärtitz;;Q29587240;;(Sandgrube Gärtitz);
+173;Döbeln;Bahnhof Gärtitz;51.1428988,13.1193907;Q29587240;;(Sandgrube Gärtitz);
 174;Döbeln;Döbeln Stadt;51.119444444444,13.112777777778;Q71163;;(Stadt);
 175;Dobra;Dobra;51.0137,14.02731;Q1233338;;;
 176;Dommitzsch;Dommitzsch;51.639444444444,12.8825;Q12045;;;
@@ -279,8 +279,8 @@
 457;Heidenau;Heidenau railway station;50.981111,13.858056;;;;
 458;Heidersdorf;Heidersdorf;50.683333333333,13.4;;;(b.;Sayda)
 459;Heinzebank;Heinzebank;50.680555555556,13.12;Q1601241;;;
-460;Hellendorf;Hellendorf Fichtenbaude;;;;(Fichtenbaute);
-461;Hellendorf;Hellendorf;;;;;
+460;Hellendorf;Hellendorf Fichtenbaude;50.8307,13.9741;;;(Fichtenbaute);
+461;Hellendorf;Hellendorf;50.8307,13.9741;;;;
 462;Helmbrechts;Helmbrechts;50.23677305555555,11.715915;Q494110;;;
 463;Helmsdorf;Helmsdorf;51.0389,14.0375;;;;
 464;Hennersdorf;Hennersdorf;50.8247,13.6253;;;;
@@ -370,7 +370,7 @@
 585;Lauterbach;Lauterbach;50.7786,12.4015;;;(b.;Neukirchen/Pleiße)
 586;Leipa;Česká Lípa;50.68558429129,14.53774710235;Q2177049;;(Ceskä;Lipa)
 593;Leipzig-Abtnaundorf/Heiterblick;Abtnaundorf;51.3706,12.4179;;;;
-596;Leipzig-Engelsdorf;Leipzig-Engelsdorf;;Q1342174;Riesaer Str. 64;;
+596;Leipzig-Engelsdorf;Leipzig-Engelsdorf;51.3382,12.4799;Q1342174;Riesaer Str. 64;;
 598;Leipzig-Ost;Leipzig-Ost;;;;(Stadtrand);
 599;Leipzig-Schönau;Leipzig-Schönau (ATG) concentration camp;51.299999,12.333299;;;;
 601;Leipzig-Schönefeld;Schönefeld;51.3597,12.4104;;;;
@@ -437,7 +437,7 @@
 688;Mobendorf;Mobendorf;50.97555556,13.19055556;Q15835417;;;
 689;Mobschatz;Mobschatz;51.0775,13.6433;;;;
 690;Mochau;Mochau;51.13333,13.18333;;;;
-691;Mockethal-Zatschke;Mockethal-Zatzschke concentration camp;;;;;
+691;Mockethal-Zatschke;Mockethal-Zatzschke concentration camp;50.98282918398965,13.952200361676805;;;;
 693;Mockrehna;Mockrehna;51.50757,12.81418;;;;
 694;Moldau;Moldava;50.720722370806,13.65733585364;;;(Moldava);
 695;Morchenstern;Smržovka;50.738254442679,15.246500406797;Q1936067;;(Smrzovka);
