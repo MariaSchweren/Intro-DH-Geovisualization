@@ -18,9 +18,10 @@ for index, row in locations.iterrows():
         for route_stop in route:
             coords = coordinates.loc[(coordinates["location"] == route_stop) | (coordinates["geo_name"] == route_stop)]
             coords = coords["coordinates"]
-            split_ = str(coords.iloc[0]).split(",")
-            route_lat.append(split_[0])
-            route_lng.append(split_[1])
-        locations.loc[index, "route_lat"] = str(route_lat)
-        locations.loc[index, "route_lng"] = str(route_lng)
-locations.to_csv("locations.csv")
+            try:
+                split_ = str(coords.iloc[0]).split(",")
+            except:
+                pass
+            locations.loc[index, "location_lat"] = str(locations.loc[index, "location_lat"]) + " " + str(split_[0])
+            locations.loc[index, "location_lng"] = str(locations.loc[index, "location_lng"]) + " " + str(split_[1])
+locations.to_csv("locations_matched.csv", index_label="id")

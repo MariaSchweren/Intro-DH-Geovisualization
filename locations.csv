@@ -1,32 +1,32 @@
-,location,route,location_lat,location_lng,route_lat,route_lng
-0,Aue,"['Wildenthal', 'Karlsbad']",50.585277777778,12.700833333333,"['50.4508', '50.230555555556']","['12.6361', '12.8725']"
-1,Bautzen,"['Neukirch', 'Steinigtwolmsdorf', 'Neudörfel', 'Wölmsdorf', 'Nixdorf']",51.181388888889,14.423888888889,"['51.09727', '51.066666666667', '51.0089', '50.990616555873', '50.965147575772']","['14.30789', '14.35', '14.2839', '14.335432343878', '14.36380182721']"
-2,Böhlen,[],51.2025,12.385833333333,,
-3,Brandhofen,"['Milstrich', 'Schiedel', 'Zschornau', 'Deutschbaselitz', 'Kamenz', 'Bischofswerda', 'Radeberg', 'Fischbach']",51.404722222222,14.268055555556,"['51.325', '51.31359', '51.302863', '51.2833', '51.266666666667', '51.1275', '51.116666666667', '51.0847']","['14.159722222222', '14.13976', '14.124254', '14.1333', '14.1', '14.179722222222', '13.916666666667', '14.0181']"
-4,Chemnitz,[],50.833333333333,12.916666666667,,
-5,Colditz,"['Hausdorf', 'Gersdorf', 'Hartha', 'Waldheim', 'Massanei', 'Reichenbach', 'Etzdorf', 'Nossen', 'zellwald', 'Siebenlehn', 'Kleinvoigtsberg', 'Halsbrücke', 'Conradsdorf', 'Naundorf', 'Nieder-/Oberbobritzsch', 'Kleinbobritzsch', 'Reichenau', 'Rehefeld-Zaunhaus', 'Teplitz-Schönau', 'Welemin', 'Leitmeritz']",51.116666666667,12.816666666667,"['51.11730194', '51.11506', '51.10195', '51.066666666667', '51.06497350435683', '51.0463', '51.05055618', '51.05', '51.0153', '51.031944444444', '50.998588', '50.95', '50.947222222222', '50.935', '50.899444444444', '50.817183333333', '50.7931', '50.730555555556', '50.633333333333', '50.539069448334', '50.53355947692']","['12.83562088', '12.93919', '12.9493', '13.016666666667', '13.052825000727154', '13.0899', '13.17972183', '13.3', '13.2652', '13.308333333333', '13.306545', '13.349722222222', '13.373055555556', '13.4206', '13.433333333333', '13.539761111111', '13.575', '13.7', '13.816666666667', '13.976850401439', '14.131899491403']"
-6,Bernsdorf/Oberlausitz,"['Neurohlau', 'Alt-Sedlitz']",51.366666666667,14.066666666667,"['50.271030375945', '49.744451332948']","['12.784301710647', '12.694192915077']"
-7,Bernsdorf/Oberlausitz,"['Bad Schandau', 'Tetschen', 'Aussig', 'Theresienstadt']",51.366666666667,14.066666666667,"['50.916666666667', '50.773611111111', '50.659166666667', '50.510278']","['14.15', '14.196111111111', '14.041666666667', '14.149722']"
-8,Riesaer Straße,"['Pirna', 'Königstein', 'Peterswald', 'Aussig', 'Leitmeritz']",51.080664,13.728153,"['50.962222222222', '50.918888888889', '50.789108789384', '50.659166666667', '50.53355947692']","['13.940277777778', '14.071388888889', '13.976253100741', '14.041666666667', '14.131899491403']"
-9,Emerich-Ambros-Ufer,['flossenbürg'],51.0527,13.6982,['49.735698'],['12.3569']
-10,Emerich-Ambros-Ufer,"['Leitmeritz', 'Theresienstadt']",51.0527,13.6982,"['50.53355947692', '50.510278']","['14.131899491403', '14.149722']"
-11,Mügelner Straße,"['Pirna', 'Königstein', 'Bielatal', 'Hellendorf Fichtenbaude', 'Peterswald']",51.011918,13.804185,"['50.962222222222', '50.918888888889', '50.866666666667', '50.8307', '50.789108789384']","['13.940277777778', '14.071388888889', '14.05', '13.9741', '13.976253100741']"
-12,Florastraße,"['Mockethal-Zatschke', 'Leitmeritz']",51.04798,13.71663,"['50.98282918398965', '50.53355947692']","['13.952200361676805', '14.131899491403']"
-13,Zwickauer Straße,"['Mockethal-Zatschke', 'Leitmeritz']",51.03723,13.71185,"['50.98282918398965', '50.53355947692']","['13.952200361676805', '14.131899491403']"
-14,Döbelner Straße,"['Carola Bridge', 'Dippoldiswalde', 'Schmiedeberg/D.', 'Schönfeld/D.', 'Rehefeld']",51.093317,13.729059,"['51.0539', '50.893333333333', '50.8375', '50.7842', '50.7305']","['13.7472', '13.666666666667', '13.675277777778', '13.6439', '13.7025']"
-15,Elsnig,['Ravensbrück'],51.610833333333,12.927777777778,['53.1929'],['13.1621']
-16,flöha,"['Heinzebank', 'Gelobtland', 'Reitzenhain', 'Kaaden', 'Groß Werscheditz', 'Saatz', 'Leitmeritz', 'Theresienstadt']",50.855833333333,13.071388888889,"['50.680555555556', '50.625863', '50.5611', '50.37608553522', '50.095833333333', '49.206395643998', '50.53355947692', '50.510278']","['13.12', '13.177621', '13.2194', '13.271397346217', '13.133888888889', '15.508922110031', '14.131899491403', '14.149722']"
-17,flößberg,"['Chemnitz', 'Aue', 'Schwarzenberg', 'Annaberg/Erzgeb.', 'Weipert', 'Komotau', 'Falkenau an der Eger', 'Pladen', 'Ober Birken', 'Taus', 'Bieschin', 'Gusen']",51.1281,12.5825,"['50.833333333333', '50.585277777778', '50.545277777778', '50.58015', '50.492422906068', '50.462777777778', '50.181415762132', '50.097018757911', '49.840223429507', '49.440605680467', '49.3044', '48.25701']","['12.916666666667', '12.700833333333', '12.779166666667', '13.00231', '13.032216898187', '13.411111111111', '12.640181474439', '13.389770943654', '13.355637956593', '12.929798039263', '13.3036', '14.464133']"
-18,Freiberg,"['Dresden', 'Brüx', 'Triebschitz bei Brüx', 'Komotau', 'Pladen', 'Ober Birken', 'Pilsen', 'Tachau', 'Haid', 'Taus', 'Budweis', 'Mauthausen']",50.911944444444,13.342777777778,"['51.05', '50.503055555556', '50.5203', '50.462777777778', '50.097018757911', '49.840223429507', '49.741388888889', '49.795398066933', '49.711710233', '49.440605680467', '48.974722222222', '48.258888888889']","['13.74', '13.636666666667', '13.5797', '13.411111111111', '13.389770943654', '13.355637956593', '13.3825', '12.633709213451', '12.775216037', '12.929798039263', '14.474722222222', '14.501111111111']"
-19,Görlitz,"['Kunnerwitz', 'Friedersdorf/G.', 'Deutsch Paulsdorf', 'Sohland am Rotstein', 'KZ-Außenlager Rennersdorf']",51.152777777778,14.987222222222,"['51.116666666667', '51.096', '51.1', '51.116666666667', '51.0172']","['14.933333333333', '14.869', '14.83', '14.783055555556', '14.7893']"
-20,Gröditz,"['Radebeul', 'Leitmeritz', 'Theresienstadt']",51.414166666667,13.446388888889,"['51.103333333333', '50.53355947692', '50.510278']","['13.67', '14.131899491403', '14.149722']"
-21,Hainichen,"['Freiberg', 'Leitmeritz', 'Theresienstadt']",50.969454,13.122099,"['50.911944444444', '50.53355947692', '50.510278']","['13.342777777778', '14.131899491403', '14.149722']"
-22,Hohenstein-Ernstthal,"['Grüna', 'Reichenbrand', 'Luditz']",50.8,12.716666666667,"['50.8125', '50.8125', '50.092025120002']","['12.7944', '12.8278', '13.163044267861']"
-23,Johanngeorgenstadt,"['Neurohlau', 'Leitmeritz', 'Theresienstadt']",50.433333333333,12.713888888889,"['50.271030375945', '50.53355947692', '50.510278']","['12.784301710647', '14.131899491403', '14.149722']"
-24,Kamenz,"['Wiesa', 'Elstra', 'Bischofswerda', 'Ebersbach/Oberlausitz', 'Zittau', 'Prag', 'Budweis', 'Mauthausen', 'Dachau']",51.266666666667,14.1,"['51.2558', '51.220555555556', '51.1275', '51.008333333333', '50.896111111111', '50.083333333333', '48.974722222222', '48.258888888889', '48.2699']","['14.1183', '14.130555555556', '14.179722222222', '14.585277777778', '14.807222222222', '14.416666666667', '14.474722222222', '14.501111111111', '11.4683']"
-25,Königstein,"['Leitmeritz', 'Bad Schandau', 'Aussig']",50.918888888889,14.071388888889,"['50.53355947692', '50.916666666667', '50.659166666667']","['14.131899491403', '14.15', '14.041666666667']"
-26,Leipzig Mitte,"['Leipzig-Abtnaundorf/Heiterblick', 'Taucha', 'Bennewitz', 'Wurzen', 'Oschatz', 'Sieglitz', 'Merschwitz', 'Glaubitz', 'Riesa', 'Dahlen', 'Meltewitz', 'Luppa', 'Mügeln', 'Bahnhof Gärtitz', 'Niederstriegis', 'Freiberg', 'Hilbersdorf', 'Oberbobritzsch', 'Hermsdorf/Erzgebirge', 'Hennersdorf', 'Sadisdorf', 'Altenberg', 'Geising', 'fürstenau']",51.34,12.375,"['51.3706', '51.38', '51.359722222222', '51.366666666667', '51.300277777778', '51.1695', '51.2647', '51.316666666667', '51.308055555556', '51.366666666667', '51.3625', '51.3342', '51.233333333333', '51.1428988', '51.083611111111', '50.911944444444', '50.8597', '50.8625', '50.761111111111', '50.8247', '50.845469444444', '50.764444444444', '50.758055555556', '50.7375']","['12.4179', '12.493611111111', '12.711388888889', '12.716666666667', '13.107222222222', '13.4192', '13.4075', '13.383333333333', '13.293888888889', '13', '12.908888888888889', '12.9586', '13.05', '13.1193907', '13.149444444444', '13.342777777778', '12.9531', '13.463055555556', '13.629722222222', '13.6253', '13.635691666667', '13.757777777778', '13.791111111111', '13.8319']"
-27,Leipzig-Schönefeld,"['Wurzen', 'Oschatz', 'Merschwitz', 'Glaubitz', 'Riesa', 'Oschatz', 'Döbeln Stadt', 'Nossen', 'Goßberg']",51.3597,12.4104,"['51.366666666667', '51.300277777778', '51.2647', '51.316666666667', '51.308055555556', '51.300277777778', '51.119444444444', '51.05', '50.98944444']","['12.716666666667', '13.107222222222', '13.4075', '13.383333333333', '13.293888888889', '13.107222222222', '13.112777777778', '13.3', '13.20388889']"
-28,Leipzig-Schönefeld,['Leipzig-Abtnaundorf/Heiterblick'],51.3597,12.4104,['51.3706'],['12.4179']
-29,Leipzig-Engelsdorf,[],51.3382,12.4799,,
-30,Leipzig-Schönau,"['Bennewitz', 'Wurzen', 'Oschatz', 'Wurzen']",51.299999,12.333299,"['51.359722222222', '51.366666666667', '51.300277777778', '51.366666666667']","['12.711388888889', '12.716666666667', '13.107222222222', '12.716666666667']"
+location,route
+Aue,"['Wildenthal', 'Karlsbad']"
+Bautzen,"['Neukirch', 'Steinigtwolmsdorf', 'Neudörfel', 'Wölmsdorf', 'Nixdorf']"
+Böhlen,[]
+Brandhofen,"['Milstrich', 'Schiedel', 'Zschornau', 'Deutschbaselitz', 'Kamenz', 'Bischofswerda', 'Radeberg', 'Fischbach']"
+Chemnitz,[]
+Colditz,"['Hausdorf', 'Gersdorf', 'Hartha', 'Waldheim', 'Massanei', 'Reichenbach', 'Etzdorf', 'Nossen', 'zellwald', 'Siebenlehn', 'Kleinvoigtsberg', 'Halsbrücke', 'Conradsdorf', 'Naundorf', '', 'Nieder-/Oberbobritzsch', 'Kleinbobritzsch', 'Reichenau', 'Rehefeld-Zaunhaus', 'Teplitz-Schönau', 'Welemin', 'Leitmeritz']"
+Bernsdorf/Oberlausitz,"['Neurohlau', 'Alt-Sedlitz']"
+Bernsdorf/Oberlausitz,"['Bad Schandau', 'Tetschen', 'Aussig', 'Theresienstadt']"
+Riesaer Straße,"['Pirna', 'Königstein', 'Peterswald', 'Aussig', 'Leitmeritz']"
+Emerich-Ambros-Ufer,['flossenbürg']
+Emerich-Ambros-Ufer,"['Leitmeritz', 'Theresienstadt']"
+Mügelner Straße,"['Pirna', 'Königstein', 'Bielatal', 'Hellendorf Fichtenbaude', 'Peterswald']"
+Florastraße,"['Mockethal-Zatschke', 'Leitmeritz']"
+Zwickauer Straße,"['Mockethal-Zatschke', 'Leitmeritz']"
+Döbelner Straße,"['Carola Bridge', 'Dippoldiswalde', 'Schmiedeberg/D.', 'Schönfeld/D.', 'Rehefeld']"
+Elsnig,['Ravensbrück']
+flöha,"['Heinzebank', 'Gelobtland', 'Reitzenhain', 'Kaaden', 'Groß Werscheditz', 'Saatz', 'Leitmeritz', 'Theresienstadt']"
+flößberg,"['Chemnitz', 'Aue', 'Schwarzenberg', 'Annaberg/Erzgeb.', 'Weipert', 'Komotau', 'Falkenau an der Eger', 'Pladen', 'Ober Birken', 'Taus', 'Bieschin', 'Gusen']"
+Freiberg,"['Dresden', 'Brüx', 'Triebschitz bei Brüx', 'Komotau', 'Pladen', 'Ober Birken', 'Pilsen', 'Tachau', 'Haid', 'Taus', 'Budweis', 'Mauthausen']"
+Görlitz,"['Kunnerwitz', 'Friedersdorf/G.', 'Deutsch Paulsdorf', 'Sohland am Rotstein', 'KZ-Außenlager Rennersdorf']"
+Gröditz,"['Radebeul', 'Leitmeritz', 'Theresienstadt']"
+Hainichen,"['Freiberg', 'Leitmeritz', 'Theresienstadt']"
+Hohenstein-Ernstthal,"['Grüna', 'Reichenbrand', 'Luditz']"
+Johanngeorgenstadt,"['Neurohlau', 'Leitmeritz', 'Theresienstadt']"
+Kamenz,"['Wiesa', 'Elstra', 'Bischofswerda', 'Ebersbach/Oberlausitz', 'Zittau', 'Prag', 'Budweis', 'Mauthausen', 'Dachau']"
+Königstein,"['Leitmeritz', 'Bad Schandau', 'Aussig']"
+Leipzig Mitte,"['Leipzig-Abtnaundorf/Heiterblick', 'Taucha', 'Bennewitz', 'Wurzen', 'Oschatz', 'Sieglitz', 'Merschwitz', 'Glaubitz', 'Riesa', 'Dahlen', 'Meltewitz', 'Luppa', 'Mügeln', 'Bahnhof Gärtitz', 'Niederstriegis', 'Freiberg', 'Hilbersdorf', 'Oberbobritzsch', 'Hermsdorf/Erzgebirge', 'Hennersdorf', 'Sadisdorf', 'Altenberg', 'Geising', 'fürstenau']"
+Leipzig-Schönefeld,"['Wurzen', 'Oschatz', 'Merschwitz', 'Glaubitz', 'Riesa', 'Oschatz', 'Döbeln Stadt', 'Nossen', 'Goßberg']"
+Leipzig-Schönefeld,['Leipzig-Abtnaundorf/Heiterblick']
+Leipzig-Engelsdorf,[]
+Leipzig-Schönau,"['Bennewitz', 'Wurzen', 'Oschatz', 'Wurzen']"
