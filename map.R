@@ -19,31 +19,40 @@ demo1_lng = 16.29121
 df <- data.frame(lat, lng)
 csv <- read.csv(file="C:\\Users\\Fabian\\Documents\\data\\data.csv", encoding="UTF-8")
 
-ui <- fluidPage(
+locations <- read.csv(file="C:\\Users\\Fabian\\Documents\\data\\locations_matched.csv", encoding="UTF-8")
 
+data <- list()
+for(i in locations[,1]) {
+  location_lat = strsplit(locations[i+1,4], " ")
+  location_lng = strsplit(locations[i+1,5], " ")
+  entry <- list(lat=location_lat,lng=location_lng)
+  data[[i+1]] <- entry
+}
+
+ui <- fluidPage(
   sidebarLayout(position = "right",
                 sidebarPanel(h4("Name"),
-                             verbatimTextOutput("name"),
+                             textOutput("name"),
                              h4("Ort"),
-                             verbatimTextOutput("ort"),
+                             textOutput("ort"),
                              h4("Betreiber"),
-                             verbatimTextOutput("betreiber"),
+                             textOutput("betreiber"),
                              h4("Dauer des Bestehens"),
-                             verbatimTextOutput("dauer"),
+                             textOutput("dauer"),
                              h4("Haeftlingsbelegung"),
-                             verbatimTextOutput("belegung"),
+                             textOutput("belegung"),
                              h4("Unterbringung"),
-                             verbatimTextOutput("unterbringung"),
+                             textOutput("unterbringung"),
                              h4("Art der Arbeiten"),
-                             verbatimTextOutput("arbeiten"),
+                             textOutput("arbeiten"),
                              h4("Todesopfer"),
-                             verbatimTextOutput("todesopfer"),
+                             textOutput("todesopfer"),
                              h4("Rueckueberstellungen"),
-                             verbatimTextOutput("rueckueberstellungen"),
+                             textOutput("rueckueberstellungen"),
                              h4("Fluchten"),
-                             verbatimTextOutput("fluchten"),
+                             textOutput("fluchten"),
                              h4("Zugaenge aus anderen Lagern"),
-                             verbatimTextOutput("zugaenge")),
+                             textOutput("zugaenge")),
                 mainPanel(leafletOutput("map", width=1200, height=800),
                           dateRangeInput("time", NULL, start="1945-01-01", end="1945-05-08", language="de", weekstart=1, width="500px"),
                           checkboxInput("osrm", "OSRM", FALSE),
@@ -55,14 +64,21 @@ square_green <-
   makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/niE/yKR/niEyKRyoT.jpeg", iconWidth = 18, iconHeight = 18)
 
 server <- function(input, output, session) {
-  output$map <- renderLeaflet(leaflet() %>% setView(lng=13.5, lat=50.95, zoom=8) %>% addTiles() %>% addMarkers(lat=demo1_lat, lng=demo1_lng))
+  output$map <- renderLeaflet(leaflet() %>% setView(lng=13.5, lat=50.95, zoom=8) %>% addTiles())
   
-  for(i in 1:length(a)) {
-    leafletProxy('map') %>% addMarkers(layerId=i, lat=a[[i]]$lat, lng=a[[i]]$lng, icon=square_green) %>% addPolylines(layerId=i, lat=a[[i]]$lat, lng=a[[i]]$lng, color="red")
+  for(i in 1:length(data)) {
+    lat <- as.numeric(data[[i]]$lat[[1]])
+    lng <- as.numeric(data[[i]]$lng[[1]])
+    leafletProxy('map') %>% addMarkers(layerId=i, lat=lat, lng=lng, icon=square_green) %>% addPolylines(layerId=i, lat=lat, lng=lng, color="red")
   }
+  
+  #for(i in 1:length(a)) {
+  #  leafletProxy('map') %>% addMarkers(layerId=i, lat=a[[i]]$lat, lng=a[[i]]$lng, icon=square_green) %>% addPolylines(layerId=i, lat=a[[i]]$lat, lng=a[[i]]$lng, color="red")
+  #}
   
   observeEvent(input$map_marker_click, { 
     p <- input$map_marker_click
+    print(p)
     output$name <- renderText({csv$Name[p$id]})
     output$ort <- renderText({csv$Ort[p$id]})
     output$betreiber <- renderText({csv$Betreiber[p$id]})
@@ -78,6 +94,7 @@ server <- function(input, output, session) {
   
   observeEvent(input$map_shape_click, { 
     p <- input$map_shape_click
+    print(p)
     output$name <- renderText({csv$Name[p$id]})
     output$ort <- renderText({csv$Ort[p$id]})
     output$betreiber <- renderText({csv$Betreiber[p$id]})
