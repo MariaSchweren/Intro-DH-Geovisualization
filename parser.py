@@ -98,4 +98,4 @@ df = df.drop(["Betrieb des Rüstungskonzerns", "Rückstellungen", "Verlauf/Orte/
               "Standort", "Überstellungen", "Zugänge aus anderen Lager", "Auflösung", "Transport",
               "Weiterer Arbeitseinsatz", "Bestehen des Lagers", "Quellen"], axis="columns")  # remove merged columns
 
-df.to_csv("formatted.csv", index=False)
+df.to_csv("formatted.csv", index_label="id")
