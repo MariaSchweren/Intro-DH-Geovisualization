@@ -92,6 +92,9 @@ for index, row in df.iterrows():
         elif pd.notna(row["Evakuierung"]):
             df.loc[index, "Verlauf/Orte"] = row["Evakuierung"]
 
+dates = pd.read_csv("dates.csv")
+df["Datum"] = dates["Datum"]  # add formatted dates to dataframe
+
 df = df.fillna("Nicht bekannt.")  # format empty values
 
 df = df.drop(["Betrieb des Rüstungskonzerns", "Rückstellungen", "Verlauf/Orte/Todesopfer", "Orte", "Besonderheiten",
