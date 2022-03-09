@@ -78,34 +78,34 @@ server <- function(input, output, session) {
   
   observeEvent(input$map_marker_click, { 
     p <- input$map_marker_click
-    print(p)
-    output$name <- renderText({csv$Name[p$id]})
-    output$ort <- renderText({csv$Ort[p$id]})
-    output$betreiber <- renderText({csv$Betreiber[p$id]})
-    output$dauer <- renderText({csv$Dauer.des.Bestehens[p$id]})
-    output$belegung <- renderText({csv$H.ftlingsbelegung[p$id]})
-    output$unterbringung <- renderText({csv$Unterbringung[p$id]})
-    output$arbeiten <- renderText({csv$Art.der.Arbeiten[p$id]})
-    output$todesopfer <- renderText({csv$Todesopfer[p$id]})
-    output$rueckueberstellungen <- renderText({csv$R.ck.berstellungen[p$id]})
-    output$fluchten <- renderText({csv$Fluchten[p$id]})
-    output$zugaenge <- renderText({csv$Zug.nge.aus.anderen.Lagern[p$id]})
+    id <- p$id-1
+    output$name <- renderText({csv$Name[id]})
+    output$ort <- renderText({csv$Ort[id]})
+    output$betreiber <- renderText({csv$Betreiber[id]})
+    output$dauer <- renderText({csv$Dauer.des.Bestehens[id]})
+    output$belegung <- renderText({csv$H.ftlingsbelegung[id]})
+    output$unterbringung <- renderText({csv$Unterbringung[id]})
+    output$arbeiten <- renderText({csv$Art.der.Arbeiten[id]})
+    output$todesopfer <- renderText({csv$Todesopfer[id]})
+    output$rueckueberstellungen <- renderText({csv$R.ck.berstellungen[id]})
+    output$fluchten <- renderText({csv$Fluchten[id]})
+    output$zugaenge <- renderText({csv$Zug.nge.aus.anderen.Lagern[id]})
   })
   
   observeEvent(input$map_shape_click, { 
     p <- input$map_shape_click
-    print(p)
-    output$name <- renderText({csv$Name[p$id]})
-    output$ort <- renderText({csv$Ort[p$id]})
-    output$betreiber <- renderText({csv$Betreiber[p$id]})
-    output$dauer <- renderText({csv$Dauer.des.Bestehens[p$id]})
-    output$belegung <- renderText({csv$H.ftlingsbelegung[p$id]})
-    output$unterbringung <- renderText({csv$Unterbringung[p$id]})
-    output$arbeiten <- renderText({csv$Art.der.Arbeiten[p$id]})
-    output$todesopfer <- renderText({csv$Todesopfer[p$id]})
-    output$rueckueberstellungen <- renderText({csv$R.ck.berstellungen[p$id]})
-    output$fluchten <- renderText({csv$Fluchten[p$id]})
-    output$zugaenge <- renderText({csv$Zug.nge.aus.anderen.Lagern[p$id]})
+    id <- p$id-1
+    output$name <- renderText({csv$Name[id]})
+    output$ort <- renderText({csv$Ort[id]})
+    output$betreiber <- renderText({csv$Betreiber[id]})
+    output$dauer <- renderText({csv$Dauer.des.Bestehens[id]})
+    output$belegung <- renderText({csv$H.ftlingsbelegung[id]})
+    output$unterbringung <- renderText({csv$Unterbringung[id]})
+    output$arbeiten <- renderText({csv$Art.der.Arbeiten[id]})
+    output$todesopfer <- renderText({csv$Todesopfer[id]})
+    output$rueckueberstellungen <- renderText({csv$R.ck.berstellungen[id]})
+    output$fluchten <- renderText({csv$Fluchten[id]})
+    output$zugaenge <- renderText({csv$Zug.nge.aus.anderen.Lagern[id]})
   })
   
   observeEvent(input$time, {
