@@ -1,6 +1,7 @@
 library(shiny)
 library(leaflet)
 library(osrm)
+library(geojsonio)
 
 csv <- read.csv(file="C:\\Users\\Fabian\\Documents\\data\\data.csv", encoding="UTF-8")
 locations <- read.csv(file="C:\\Users\\Fabian\\Documents\\data\\locations_matched.csv", encoding="UTF-8")
@@ -44,13 +45,14 @@ ui <- fluidPage(
   )
 )
 
-square_black <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/niE/yKR/niEyKRyoT.jpeg", iconWidth = 18, iconHeight = 18)
+square_black <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/niE/yKR/niEyKRyoT.jpeg", iconWidth = 10, iconHeight = 10)
 polyline_color <- "red"
 polyline_width <- 3
 prev <- FALSE
+saxony_geojson <- geojson_read("C:\\Users\\Fabian\\Documents\\data\\saxony.geojson")  # source: http://opendatalab.de/projects/geojson-utilities/
 
 server <- function(input, output, session) {
-  output$map <- renderLeaflet(leaflet() %>% setView(lng=13.5, lat=50.95, zoom=8) %>% addTiles())
+  output$map <- renderLeaflet(leaflet() %>% addTiles() %>% setView(lng=13.5, lat=50.95, zoom=8) %>% addGeoJSON(saxony_geojson, color="black", fill=FALSE))
   
   for(i in 1:length(data)) {
     lat <- as.numeric(data[[i]]$lat[[1]])
