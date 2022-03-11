@@ -46,6 +46,8 @@ ui <- fluidPage(
 
 square_black <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/niE/yKR/niEyKRyoT.jpeg", iconWidth = 18, iconHeight = 18)
 polyline_color <- "red"
+polyline_width <- 3
+prev <- FALSE
 
 server <- function(input, output, session) {
   output$map <- renderLeaflet(leaflet() %>% setView(lng=13.5, lat=50.95, zoom=8) %>% addTiles())
@@ -53,12 +55,21 @@ server <- function(input, output, session) {
   for(i in 1:length(data)) {
     lat <- as.numeric(data[[i]]$lat[[1]])
     lng <- as.numeric(data[[i]]$lng[[1]])
-    leafletProxy('map') %>% addMarkers(layerId=i, lat=lat, lng=lng, icon=square_black) %>% addPolylines(layerId=i, lat=lat, lng=lng, color=polyline_color)
+    leafletProxy('map') %>% addMarkers(layerId=i, group=as.character(i), lat=lat, lng=lng, icon=square_black) %>% addPolylines(layerId=i, group=as.character(i), lat=lat, lng=lng, color=polyline_color, weight=polyline_width)
   }
-  
+
   observeEvent(input$map_marker_click, { 
     p <- input$map_marker_click
     id <- p$id-1
+    if(prev) {
+      leafletProxy('map') %>% clearGroup(group=as.character(prev)) %>% 
+        addMarkers(layerId=prev, group=as.character(prev), lat=as.numeric(data[[prev]]$lat[[1]]), lng=as.numeric(data[[prev]]$lng[[1]]), icon=square_black) %>%
+        addPolylines(layerId=prev, group=as.character(prev), lat=as.numeric(data[[prev]]$lat[[1]]), lng=as.numeric(data[[prev]]$lng[[1]]), color=polyline_color, weight=polyline_width)
+    }
+    prev <<- id+1
+    leafletProxy('map') %>% clearGroup(group=as.character(id+1)) %>% 
+      addMarkers(layerId=id+1, group=as.character(id+1), lat=as.numeric(data[[id+1]]$lat[[1]]), lng=as.numeric(data[[id+1]]$lng[[1]]), icon=square_black) %>%
+      addPolylines(layerId=id+1, group=as.character(id+1), lat=as.numeric(data[[id+1]]$lat[[1]]), lng=as.numeric(data[[id+1]]$lng[[1]]), color="black", weight=polyline_width+3)
     output$name <- renderText({csv$Name[id]})
     output$ort <- renderText({csv$Ort[id]})
     output$betreiber <- renderText({csv$Betreiber[id]})
@@ -75,6 +86,15 @@ server <- function(input, output, session) {
   observeEvent(input$map_shape_click, { 
     p <- input$map_shape_click
     id <- p$id-1
+    if(prev) {
+      leafletProxy('map') %>% clearGroup(group=as.character(prev)) %>% 
+        addMarkers(layerId=prev, group=as.character(prev), lat=as.numeric(data[[prev]]$lat[[1]]), lng=as.numeric(data[[prev]]$lng[[1]]), icon=square_black) %>%
+        addPolylines(layerId=prev, group=as.character(prev), lat=as.numeric(data[[prev]]$lat[[1]]), lng=as.numeric(data[[prev]]$lng[[1]]), color=polyline_color, weight=polyline_width)
+    }
+    prev <<- id+1
+    leafletProxy('map') %>% clearGroup(group=as.character(id+1)) %>% 
+      addMarkers(layerId=id+1, group=as.character(id+1), lat=as.numeric(data[[id+1]]$lat[[1]]), lng=as.numeric(data[[id+1]]$lng[[1]]), icon=square_black) %>%
+      addPolylines(layerId=id+1, group=as.character(id+1), lat=as.numeric(data[[id+1]]$lat[[1]]), lng=as.numeric(data[[id+1]]$lng[[1]]), color="black", weight=polyline_width+3)
     output$name <- renderText({csv$Name[id]})
     output$ort <- renderText({csv$Ort[id]})
     output$betreiber <- renderText({csv$Betreiber[id]})
