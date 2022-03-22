@@ -8,8 +8,8 @@ locations <- read.csv(file="C:\\Users\\Fabian\\Documents\\data\\locations_matche
 
 data <- list()
 for(i in locations[,1]) { # TODO increase id in csv by one
-  location_lat = strsplit(locations[i+1,4], " ")
-  location_lng = strsplit(locations[i+1,5], " ")
+  location_lat = strsplit(locations[i+1, "location_lat"], " ")
+  location_lng = strsplit(locations[i+1, "location_lng"], " ")
   osrm_lat = strsplit(locations[i+1, "osrm_lat"], ", ")
   osrm_lng = strsplit(locations[i+1, "osrm_lng"], ", ")
   entry <- list(lat=location_lat,lng=location_lng,osrm_lat=osrm_lat,osrm_lng=osrm_lng)
@@ -48,6 +48,7 @@ ui <- fluidPage(
 )
 
 square_black <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/niE/yKR/niEyKRyoT.jpeg", iconWidth = 10, iconHeight = 10)
+square_green <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/nTE/Kyb/nTEKyb8TA.png", iconWidth = 10, iconHeight = 10)
 polyline_color <- "red"
 selected_polyline_color <- "black"
 polyline_width <- 3
@@ -69,13 +70,25 @@ server <- function(input, output, session) {
     osrm_lat <- as.numeric(data[[id]]$osrm_lat[[1]])
     osrm_lng <- as.numeric(data[[id]]$osrm_lng[[1]])
     if(osrm) {
-      leafletProxy('map') %>% 
-        addMarkers(layerId=id, group=as.character(id), lat=lat, lng=lng, icon=square_black) %>%
-        addPolylines(layerId=id, group=as.character(id), lat=osrm_lat, lng=osrm_lng, color=color, weight=weight)
+      if(length(data[[id]]$lat[[1]]) == 1) {
+        leafletProxy('map') %>% 
+          addMarkers(layerId=id, group=as.character(id), lat=lat[1], lng=lng[1], icon=square_green)
+      } else {
+        leafletProxy('map') %>% 
+          addMarkers(layerId=id, group=as.character(id), lat=lat[1], lng=lng[1], icon=square_green) %>%
+          addMarkers(layerId=id, group=as.character(id), lat=lat[2:length(lat)], lng=lng[2:length(lat)], icon=square_black) %>%
+          addPolylines(layerId=id, group=as.character(id), lat=osrm_lat, lng=osrm_lng, color=color, weight=weight)
+      }
     } else {
-      leafletProxy('map') %>% 
-        addMarkers(layerId=id, group=as.character(id), lat=lat, lng=lng, icon=square_black) %>%
-        addPolylines(layerId=id, group=as.character(id), lat=lat, lng=lng, color=color, weight=weight)
+      if(length(data[[id]]$lat[[1]]) == 1) {
+        leafletProxy('map') %>% 
+          addMarkers(layerId=id, group=as.character(id), lat=lat[1], lng=lng[1], icon=square_green)
+      } else {
+        leafletProxy('map') %>% 
+          addMarkers(layerId=id, group=as.character(id), lat=lat[1], lng=lng[1], icon=square_green) %>%
+          addMarkers(layerId=id, group=as.character(id), lat=lat[2:length(lat)], lng=lng[2:length(lat)], icon=square_black) %>%
+          addPolylines(layerId=id, group=as.character(id), lat=lat, lng=lng, color=color, weight=weight)
+      }
     }
   }
   
