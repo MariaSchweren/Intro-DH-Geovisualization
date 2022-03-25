@@ -269,10 +269,8 @@
 449;Halsbrücke;Halsbrücke;50.95,13.349722222222;;;;
 450;Hartha;Harthaer Kreuz TP;51.10195,12.9493;;;(b.;Waldheim)
 451;Hartha;Harthaer Kreuz TP;51.10195,12.9493;;Harthaer Kreuz;;
-452;Hartmannsdorf;Miłoszów;51.004444444444,15.25;;;(b.;Chemnitz)
-;;;51.00479,15.24868;;;;
-453;Hartmannsdorf;Miłoszów;51.004444444444,15.25;;;(Miloszöw);
-;;;51.00479,15.24868;;;;
+452;Hartmannsdorf;Miłoszów;51.00479,15.24868;;;(b.;Chemnitz)
+453;Hartmannsdorf;Miłoszów;51.00479,15.24868;;;(Miloszöw);
 454;Harzungen;Harzungen concentration camp;51.5564,10.8039;;;(pr.;Sachsen)
 455;Hauptmannsgrün;Hauptmannsgrün;50.627066,12.392591;Q43302018;;;
 456;Hausdorf;Hausdorf (Colditz);51.11730194,12.83562088;;;(b.;Colditz)
@@ -303,6 +301,7 @@
 489;Hohenstein-Ernstthal;Hohenstein-Ernstthal;50.8,12.716666666667;;;;
 490;Hohentanne;Hohentanne;50.985836,13.311043;;;;
 491;Hohndorf;Hohndorf;50.746111111111,12.669166666667;;;;
+2006;Horneburg;Horneburg;53.5095,9.5769;;;;
 492;Hradiste&;Hradiště Military Area;50.174957762615,13.04660944655;;;(heute;Truppenübungsplatz)
 493;Hühndorf;Hühndorf;51.0694,13.5708;Q1246074;;;
 496;Irfersgrün;Irfersgrün;50.61237,12.427177;Q26271290;;;
@@ -349,7 +348,7 @@
 556;Kronach;Kronach;50.241111111111,11.328055555556;;;(Bayern);
 557;Krostitz;Krostitz;51.46208,12.4536;;;;
 558;Krummenhennersdorf;Krummenhennersdorf;50.979166666667,13.3625;Q1790176;;;
-560;Kühnheide;Kühnheide;;;;;
+560;Kühnheide;Kühnheide;50.6191,12.8014;;;;
 561;Kunnerwitz;Kunnerwitz;51.116666666667,14.933333333333;Q1283880;;;
 562;Kürbitz;Kürbitz;50.4614,12.0753;;;;
 563;Kurort Hartha;Kurort Hartha;50.9803,13.5444;Q1716267;;;
@@ -464,6 +463,7 @@
 724;Neukirch;Neukirch/Lausitz;51.09727,14.30789;;;;
 725;Neukirchen;Neukirchen (Reinsberg);51.03124,13.39351;;;(b.;Reinsberg)
 726;Neukirchen/Erzgeb.;Neukirchen, Erzgebirgskreis;50.779444444444,12.866944444444;Q57804;;;
+2010;Neulehn;Neulehn;50.5222,12.5301;;;;
 727;Neumark;Neumark, Saxony;50.666666666667,12.35;;;;
 729;Neundorf;Neundorf bei Lobenstein;50.433333333333,11.6;;;(b.;Lobenstein/Thüringen)
 730;Neundorf;Neundorf (Plauen);50.4933,12.09;;;(b.;Plauen)
@@ -477,7 +477,7 @@
 738;Niederglauba;Niederglauba;;;;;
 739;Niedergurig;Niedergurig;51.226944444444,14.478888888889;Q160604;;;
 740;Niederoderwitz;Oderwitz;50.958888888889,14.718611111111;Q502467;;;
-741;Niederschlema;Niederschlema;;;;;
+741;Niederschlema;Niederschlema;50.6051,12.6712;;;;
 742;Niedersteinbach;Niedersteinbach;50.9431,12.6511;;;(Thüringen);
 743;Niederstriegis;Niederstriegis;51.083611111111,13.149444444444;Q71017;;;
 744;Niederwiesa;Niederwiesa;50.863333333333,13.0225;;;;
@@ -527,8 +527,9 @@
 815;Pladen;Blatno;50.097018757911,13.389770943654;;;(Blatno;u
 816;Plan;Planá;49.86827193037,12.743844417597;;;(Planä);
 818;Plauen;Plauen (Vogtland) Oberer Bahnhof;50.5053,12.13;;;;
-819;Plauen;Plauen (Vogtland) Oberer Bahnhof;50.5053,12.13;;;(ob.;Bhf)
-820;Plauen,;L.-F.-Schönherr-Straße;;;Roonstraße;(L.-E-Schönherr-Straße);
+819;Plauen;Pausaer Straße;50.5275083,12.1082502;;;;
+2003;Plauen;Hans-Sachs-Straße;50.5149558,12.1272316;;;;
+820;Plauen;L.-F.-Schönherr-Straße;50.4928173,12.1055492;;Roonstraße;(L.-E-Schönherr-Straße);
 821;Plömnitz;Plömnitz;51.74146,11.81471;Q15840670;;(Standort;FAL
 822;Plötz;Plötz;51.633055555556,11.933055555556;;;(b.;Löbejün/pr.
 823;Pockau-Lengefeld;Pockau-Lengefeld;50.7167,13.1833;Q15474520;;;
@@ -572,8 +573,8 @@
 873;Reichenberg;Liberec;50.7699972,15.0584492;;;(Liberec);
 874;Reichenbrand;Reichenbrand;50.8125,12.8278;Q1069545;;(b.;Chemnitz)
 875;Reichwalde;Reichwalde;51.380555555556,14.6625;;;;
-876;Reinholdshain;Reinholdshain;50.8976,13.7003;;;(b.;Dippoldiswalde)
-877;Reinholdshain;Reinholdshain;50.8361,12.5686;;;(b.;Glauchau)
+876;Reinholdshain/D.;Reinholdshain;50.8976,13.7003;;;(b.;Dippoldiswalde)
+877;Reinholdshain/G.;Reinholdshain;50.8361,12.5686;;;(b.;Glauchau)
 878;Reitzenhain;Reitzenhain;50.5611,13.2194;;;;
 880;Remersdorf;Remersdorf;;;;;
 881;Remse;Remse;50.853888888889,12.575555555556;;;;
@@ -588,9 +589,11 @@
 ;;;50.48031,12.79336;;;;
 893;Rochlitz;Rochlitz;51.048055555556,12.798611111111;;;;
 894;Röderau;Röderau;51.31916667,13.32166667;;;;
+2007;Rodewisch;Rodewisch;50.5309,12.4049;;;;
 895;Röhrsdorf;Röhrsdorf;51.0931,13.5125;;;(b.;Klipphausen)
 896;Roßwein;Roßwein;51.066666666667,13.183333333333;;;;
 903;Rothenburg/Oberlausitz;Rothenburg;51.333055555556,14.966666666667;Q157095;;(pr.;Niederschlesien)
+2009;Rothenkirchen-Stützengrün;Rothenkirchen-Stützengrün;50.5390,12.5026;;;;
 904;Rugiswalde;Rugiswalde;51.000833,14.256944;;;;
 905;Ruppendorf;Ruppendorf;50.907222222222,13.601944444444;;;;
 906;Ruppertsgrün;Ruppertsgrün (Pöhl);50.5762,12.1805;;;(b.;Plauen)
@@ -657,8 +660,10 @@
 976;Spitzcunnersdorf;Spitzkunnersdorf;50.9375,14.684722222222;;;;
 977;Spremberg;Spremberg;51.571666666667,14.379444444444;;;(Preußen);
 978;Stangengrün;Stangengrün;50.5853,12.4494;Q1514950;;;
+2005;Stankau;Stankau;49.5537,13.0692;;;;
 979;Staucha;Staucha;51.222778,13.220556;;;;
 980;Stauchitz;Stauchitz;51.25,13.216666666667;;;;
+2002;Staudnitz;Klinga;51.2721,12.6375;;;;
 981;Steinheidel;Steinheidel;50.480277777778,12.722222222222;;;;
 982;Steinigtwolmsdorf;Steinigtwolmsdorf;51.066666666667,14.35;;;;
 983;Steinpleis;Steinpleis;50.7139,12.3967;Q2341457;;Bogendreieck;
@@ -713,6 +718,7 @@
 1070;Werdau;Werdau;50.733333333333,12.383333333333;;;;
 1071;Wermsdorf;Wermsdorf;51.283333333333,12.95;;;;
 1072;Wermsdorf;Hubertusburg;51.2774,12.9398;;Schloss Hubertusburg;;
+2008;Wernesgrün;Wernesgrün;50.5300,12.4707;;;;
 1073;Wernigerode;Wernigerode;51.835,10.785277777778;;;(preuß.;Prov.
 1074;Wien;Vienna;48.208333333333336,16.3725;;;;
 1075;Wiesa;Wiesa;51.2558,14.1183;;;(b.;Kamenz)
@@ -726,7 +732,7 @@
 1085;Wohlbach;Mühlental;50.451944444444,12.481388888889;;;;
 1092;Wolfen;Wolfen concentration camp;51.666698,12.2833;;;(pr.;Sachsen)
 1093;Wolfsgrün;Wolfsgrün;50.518611111111,12.613888888889;;;;
-1094;Wolkenburg;Wolkenburg concentration camp;51.599998,14.266699;;;;
+1094;Wolkenburg;Wolkenburg concentration camp;50.8994219,12.6655105;;;;
 1095;Wölmsdorf;Vilémov;50.990616555873,14.335432343878;;;(Vilemov);
 1096;Wurschen;Wurschen;51.193330555556,14.581111111111;;;;
 1097;Wurzen;Wurzen;51.366666666667,12.716666666667;;;;
@@ -751,4 +757,5 @@
 1125;Zwodau;Svatava;50.192347393565,12.625320911756;Q1234231;;(Svatava);
 1126;Zwönitz;Zwönitz;50.630277777778,12.813333333333;;;;
 1127;Zwota;Zwota;50.35,12.416666666667;;;;
+2004;Zwotental;Zwotental;50.3601,12.3646;;;;
 1128;Zwöten;Zwötzen;50.8517,12.0894;;;(b.;Gera)
