@@ -1,0 +1,32 @@
+location,route
+Aue,"['Wildenthal', 'Karlsbad']"
+Bautzen,"['Neukirch', 'Steinigtwolmsdorf', 'Neudörfel', 'Wölmsdorf', 'Nixdorf']"
+Böhlen,[]
+Brandhofen,"['Milstrich', 'Schiedel', 'Zschornau', 'Deutschbaselitz', 'Kamenz', 'Bischofswerda', 'Radeberg', 'Fischbach']"
+Chemnitz,[]
+Colditz,"['Hausdorf', 'Gersdorf', 'Hartha', 'Waldheim', 'Massanei', 'Reichenbach', 'Etzdorf', 'Nossen', 'zellwald', 'Siebenlehn', 'Kleinvoigtsberg', 'Halsbrücke', 'Conradsdorf', 'Naundorf', '', 'Nieder-/Oberbobritzsch', 'Kleinbobritzsch', 'Reichenau', 'Rehefeld-Zaunhaus', 'Teplitz-Schönau', 'Welemin', 'Leitmeritz']"
+Bernsdorf/Oberlausitz,"['Neurohlau', 'Alt-Sedlitz']"
+Bernsdorf/Oberlausitz,"['Bad Schandau', 'Tetschen', 'Aussig', 'Theresienstadt']"
+Riesaer Straße,"['Pirna', 'Königstein', 'Peterswald', 'Aussig', 'Leitmeritz']"
+Emerich-Ambros-Ufer,['flossenbürg']
+Emerich-Ambros-Ufer,"['Leitmeritz', 'Theresienstadt']"
+Mügelner Straße,"['Pirna', 'Königstein', 'Bielatal', 'Hellendorf Fichtenbaude', 'Peterswald']"
+Florastraße,"['Mockethal-Zatschke', 'Leitmeritz']"
+Zwickauer Straße,"['Mockethal-Zatschke', 'Leitmeritz']"
+Döbelner Straße,"['Carola Bridge', 'Dippoldiswalde', 'Schmiedeberg/D.', 'Schönfeld/D.', 'Rehefeld']"
+Elsnig,['Ravensbrück']
+flöha,"['Heinzebank', 'Gelobtland', 'Reitzenhain', 'Kaaden', 'Groß Werscheditz', 'Saatz', 'Leitmeritz', 'Theresienstadt']"
+flößberg,"['Chemnitz', 'Aue', 'Schwarzenberg', 'Annaberg/Erzgeb.', 'Weipert', 'Komotau', 'Falkenau an der Eger', 'Pladen', 'Ober Birken', 'Taus', 'Bieschin', 'Gusen']"
+Freiberg,"['Dresden', 'Brüx', 'Triebschitz bei Brüx', 'Komotau', 'Pladen', 'Ober Birken', 'Pilsen', 'Tachau', 'Haid', 'Taus', 'Budweis', 'Mauthausen']"
+Görlitz,"['Kunnerwitz', 'Friedersdorf/G.', 'Deutsch Paulsdorf', 'Sohland am Rotstein', 'KZ-Außenlager Rennersdorf']"
+Gröditz,"['Radebeul', 'Leitmeritz', 'Theresienstadt']"
+Hainichen,"['Freiberg', 'Leitmeritz', 'Theresienstadt']"
+Hohenstein-Ernstthal,"['Grüna', 'Reichenbrand', 'Luditz']"
+Johanngeorgenstadt,"['Neurohlau', 'Leitmeritz', 'Theresienstadt']"
+Kamenz,"['Wiesa', 'Elstra', 'Bischofswerda', 'Ebersbach/Oberlausitz', 'Zittau', 'Prag', 'Budweis', 'Mauthausen', 'Dachau']"
+Königstein,"['Leitmeritz', 'Bad Schandau', 'Aussig']"
+Leipzig Mitte,"['Leipzig-Abtnaundorf/Heiterblick', 'Taucha', 'Bennewitz', 'Wurzen', 'Oschatz', 'Sieglitz', 'Merschwitz', 'Glaubitz', 'Riesa', 'Dahlen', 'Meltewitz', 'Luppa', 'Mügeln', 'Bahnhof Gärtitz', 'Niederstriegis', 'Freiberg', 'Hilbersdorf', 'Oberbobritzsch', 'Hermsdorf/Erzgebirge', 'Hennersdorf', 'Sadisdorf', 'Altenberg', 'Geising', 'fürstenau']"
+Leipzig-Schönefeld,"['Wurzen', 'Oschatz', 'Merschwitz', 'Glaubitz', 'Riesa', 'Oschatz', 'Döbeln Stadt', 'Nossen', 'Goßberg']"
+Leipzig-Schönefeld,['Leipzig-Abtnaundorf/Heiterblick']
+Leipzig-Engelsdorf,[]
+Leipzig-Schönau,"['Bennewitz', 'Wurzen', 'Oschatz', 'Wurzen']"

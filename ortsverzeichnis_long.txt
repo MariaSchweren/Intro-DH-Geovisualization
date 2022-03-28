@@ -1,0 +1,784 @@
+Abteroda (Thüringen)
+Adelsdorf (b. Großenhain)
+Adorf/Erzgeb.
+Albernau
+Alsleben (pr. Sachsen)
+Altenberg
+Altenburg (Thüringen)
+Altendorf (Thüringen)
+Altsattel
+Alt-Sedlitz (Star& Sedliste)
+Annaberg/Erzgeb. (Annaberg-Buchholz)
+Annaburg (pr. Sachsen)
+Ansprung
+Apolda
+Artern (pr. Sachsen)
+Aschersleben (pr. Sachsen)
+Aslau (Osta/pr. Niederschlesien)
+Aue
+Auerbach/V.
+Auperschien (Upofiny/Sudeten)
+Auschwitz (OSwiecim)
+Aussig (Usti nad Labem)
+Authausen
+Bad
+Bad
+Bad
+Bad
+Bad Schandau
+Bad Sulza (Thüringen)
+Bahratal
+Ballenstedt (pr. Sachsen)
+Bärenfels
+Bärenwalde
+Bärringen (Pernink)
+Bautzen
+Bebra
+Beierfeld
+Beiersdorf/V.
+Belgershain
+Bennewitz (b. Wurzen)
+Berga (Kyffhäuser, pr. Sachsen)
+Berga/Elster (Thüringen)
+Bergen-Belsen
+Berggießhübel
+Berlin
+Bernsdorf (b. Zwickau)
+Bernsdorf/Oberlausitz
+Bielatal
+Biendorf
+Bieschin (B&Siny)
+Bischofswerda
+Bitterfeld (pr. Sachsen)
+Blankenstein (b. Wilsdruff)
+Blauenthal
+Bobenneukirchen
+Bobersen
+Bockau
+Bockendorf (b. Hainichen)
+Bockwitz (b. Dahlen)
+Bodenbach (Podmokly)
+Böhlen (b. Leipzig)
+Boragk (b. Mühlberg/pr. Sachsen)
+Börnersdorf
+Bornitz
+Borsdorf
+Borstendorf
+Brandenburg/Havel
+Brand-Erbisdorf
+Brandhofen (heute Spohla)
+Braunschweig (Land Braunschweig)
+Brehna (pr. Sachsen)
+Breitenbrunn
+Breslau-Hundsfeld (Wroctaw Psie Pole)
+Brieg (Brzeg)
+Brünst (Bayern)
+Brüx (Most)
+Buchau (Bochov)
+Buchenwald
+Budweis (Cesk& Bud£jovice)
+Bunzlau (Bolestawiec)
+Burkau
+Burkersdorf (b. Frauenstein)
+Burkhardtsdorf (b. Chemnitz)
+Burkhardtsgrün
+Buttstedt (Thüringen)
+Calbe (pr. Sachsen)
+Calbitz
+Canitz
+Carlsfeld
+Carsdorf (b. Pegau)
+Cavertitz
+Celle
+Chemnitz
+Chemnitz, nordöstlicher Stadtrand
+Christianstadt (Krzystkowice)
+Clausnitz (b. Rechenberg-Bienenmühle)
+Colditz
+Commerau
+Conradsdorf
+Crostwitz
+Dachau
+Dahlen
+Dalena (pr. Sachsen)
+Dallwitz (Dalovice)
+Deggendorf (Bayern)
+Dehnitz (b. Wurzen)
+Delitzsch (pr. Sachsen)
+Dessau (Land Anhalt)
+Deutsch Paulsdorf
+Deutschbaselitz
+Deutschenbora
+Dippoldiswalde
+Dittersbach
+Dittersbach, Ortsgrenze Neuhausen/Erzgeb.
+Dittmannsdorf (b. Gronau)
+Döbeln (Sandgrube Gärtitz)
+Döbeln (Stadt)
+Dobra
+Dommitzsch
+Dorfchemnitz
+Dörschnitz
+Dresden
+Dresden, Autobahnbrücke
+Dresden, Carolabrücke
+Dresden, Florastr. 14
+Dresden, Hellerhof, Döbelner Str. 54
+Dresden, Mügelner Str. 40
+Dresden, RAW Weißeritzufer
+Dresden, Riesaer Str. 32
+Dresden, Schandaucer Str, 68
+Dresden, Zwickauer Straße
+Dresdener Heide
+Duderstadt (pr. Hannover)
+Duppau (Doupov)
+Dux (Duchcov)
+Ebersbach/Oberlausitz
+Eckardtsberga (Thüringen)
+Eger (Cheb)
+Eibenstock
+Eichigt, Rittergut Bergen
+Eichwald/Erzgebirge (Dubi)
+Eilenburg (pr. Sachsen)
+Eineborn (Thüringen)
+Eisenach
+Eisenstein (Zeleznä Ruda)
+Eisleben (pr. Sachsen)
+Elbe (b. Leitmeritz u. Theresienstadt)
+Elbe (Fluss - gesamter Lauf durch Sachsen)
+Elbe (zwischen Aken und Rosslau)
+Elbe (zwischen Coswig und Dresden)
+Elbogen (Loket)
+Elsnig (pr. Prov. Sachsen)
+Elstra
+Eppendorf
+Erdmannsdorf
+Erlbach-Kirchberg
+Eschenbach
+Etzdorf
+stadt/Gemeinde
+palkenau an der Eger (Sokolov)
+yalkenberg/Elster (pr. Sachsen)
+yalkenstein/V.
+pischbach
+rlöha
+rlößberg
+rlossenbürg
+polbern
+porberge (b. Riesa/Rittergut)
+pördergersdorf
+pörstgen (b. Bautzen)
+Freiberg
+preital
+Freystadt (Kozuchöw)
+Friedebach (b. Sayda)
+Friedersdorf (b. Görlitz)
+Friedersdorf (b. Pretzschendorf)
+fürstenau (b. Geising)
+Fürstenwalde (b. Geising)
+Gassen (Jasien)
+Gassenreuth
+Gebelzig
+Gebhardtsdorf (Giebultöw)
+Geising
+Gelobtland
+Georgenberg (Bayern)
+Georgswalde (Jirikov)
+Gera (Thüringen)
+Gernrode (pr. Sachsen)
+Geroldsgrün (Bayern)
+Gersdorf (b. Hartha)
+Gerstungen
+Dresden, Carolabrücke
+Dresden, Florastr. 14
+Dresden, Hellerhof, Döbelner Str. 54
+Dresden, Mügelner Str. 40
+Dresden, RAW Weißeritzufer
+Dresden, Riesaer Str. 32
+Dresden, Schandauer Str. 68
+Dresden, Zwickauer Straße
+Dresdener Heide
+Duderstadt (pr. Hannover)
+Duppau (Doupov)
+Dux (Duchcov)
+Ebersbach/Oberlausitz
+Eckardtsberga (Thüringen)
+Eger (Cheb)
+Eibenstock
+Eichigt, Rittergut Bergen
+Eichwald/Erzgebirge (Dubi)
+Eilenburg (pr. Sachsen)
+Eineborn (Thüringen)
+Eisenach
+Eisenstein (Zeleznä Ruda)
+Eisleben (pr. Sachsen)
+Elbe (b. Leitmeritz u. Theresienstadt)
+Elbe (Fluss - gesamter Lauf durch Sachsen)
+Elbe (zwischen Aken und Rosslau)
+Elbe (zwischen Coswig und Dresden)
+Elbogen (Loket)
+Elsnig (pr. Prov. Sachsen)
+Elstra
+Eppendorf
+Erdmannsdorf
+Erlbach-Kirchberg
+Eschenbach
+Etzdorf
+Falkenau an der Eger (Sokolov)
+Falkenberg/Elster (pr. Sachsen)
+Falkenstein/V.
+Fischbach
+flöha
+flößberg
+flossenbürg
+folbern
+forberge (b. Riesa/Rittergut)
+fördergersdorf
+förstgen (b. Bautzen)
+Freiberg
+Freital
+Freystadt (Kozuchöw)
+Friedebach (b. Sayda)
+Friedersdorf (b. Görlitz)
+Friedersdorf (b. Pretzschendorf)
+Fürstenau
+Fürstenwalde (b. Geising)
+Gassen (Jasieh)
+Gassenreuth
+Gebelzig
+Gebhardtsdorf (Giebultöw)
+Geising
+Gelobtland
+Georgenberg (Bayern)
+Georgswalde (Jirikov)
+Gera (Thüringen)
+Gernrode (pr. Sachsen)
+Geroldsgrün (Bayern)
+Gersdorf (b. Hartlia)
+Gerstungen
+Glashütte
+Glaubitz
+Glauchau/Sachsen
+Glauschnitz
+Glebitzsch (pr. Sachsen)
+Gleiwitz (Gliwice)
+Gohlis (b. Riesa)
+Goldenhöhe (Zlaty Kopec)
+Göltzschtalbrücke
+Görlitz (pr. Niederschlesien)
+Görschlitz
+Goslar (Hannover)
+Gospersgrün OT Römersgrün
+Goßberg
+Gößnitz (Thüringen)
+Gottesgab (BoZi Dar)
+Gottesgrün (Thüringen)
+Gottleuba
+Gräfenwarth (Thüringen)
+Graslitz (Kraslice)
+Griesbach (Bayern)
+Grillenburg
+Grimma
+Gröba
+Grobau/V.
+Gröditz
+Gronau
+Groß Särchen
+Groß Werscheditz (Veru$ice)
+Großenhain
+Großharthau
+Großkagen
+Großkoschen (pr. Brandenburg)
+Groß-Rosen
+Großschirma
+Großschönau
+Großwerther (pr. Sachsen)
+Grottau (Hrädek nad Nisou)
+Grumbach (b. Wilsdruff)
+Grüna (b. Chemnitz)
+Grünberg (Zielona Göra)
+Grünhain
+Grünhainichen
+Gunzen
+Gutenfürst
+Hadmersleben (pr. Sachsen)
+Haid (Bor u Tachova)
+Haida (Novy Bor)
+Hainichen
+Halbau {Itowa)
+Halberstadt (Land Anhalt)
+Halle
+Halsbrücke
+Hartha (b. Waldheim)
+Harthaer Kreuz
+Hartmannsdorf (b. Chemnitz)
+Hartmannsdorf (Miloszöw)
+Harzungen (pr. Sachsen)
+Hauptmannsgrün
+Hausdorf (b. Colditz)
+Heidenau
+Heidersdorf (b. Sayda)
+Heinzebank
+Hellendorf (Fichtenbaute)
+Hellendorf
+Helmbrechts
+Helmsdorf
+Hennersdorf
+Hermsdorf/Erzgebirge
+Herrnsdorf
+Hertine (Rtyne)
+Herzberg am Harz
+Herzogswalde
+Hessisch-Lichtenau (pr. Ilessen-Nassau)
+Hilbersdorf
+Hinsdorf (pr. Sachsen)
+Hinterhermsdorf
+Hirschberg (Jelenia Göra)
+Hirschenstand (Jeleni)
+Höckendorf
+Hof (b. Stauchitz)
+Hof (Bayern)
+Hohenprießnitz
+Hohenstein-Ernstthal
+Hohentanne
+Hohndorf
+Hradiste& (heute Truppenübungsplatz)
+Hühndorf
+Irfersgrün
+Irrenlohe
+Jena (Thüringen)
+Jessen (pr. Sachsen)
+Johanngeorgenstadt
+Jößnitz
+Kaaden (Kadan)
+Kamenz
+Karlsbad (Karlovy Vary)
+Kaschitz (Kastice)
+Kauern (Thüringen)
+Kemtau
+Kirch-Edlau (pr. Sachsen)
+Kittlitztreben
+Kitzscher
+Klaffenbach
+Klattau (Klatovy)
+Klein Radisch
+Kleinbobritzsch
+Kleinschirma
+Kleinvoigtsberg
+Kleinwaltersdorf
+Klingenberg
+Klingenthal
+Klitten
+Klostergrab (Hrob)
+Klösterle (KläSterec nad Ohfi)
+Komotau (Chomutov)
+Königsbrück
+Königshain
+Königstein
+Königswalde (b. Werdau)
+Könnern (pr. Sachsen)
+Koselitz (Sandgrube)
+Kossa
+Köthen
+Kotitz
+Kratzau (Chrastava)
+Kreiensen (pr. Westfalen)
+Kreinitz
+Krina (pr. Sachsen)
+Kronach (Bayern)
+Krostitz
+Krummenhennersdorf
+Kühnheide
+Kunnerwitz
+Kürbitz
+Kurort Hartha
+Kuttenplan (Chodovä Planä)
+Laas
+Lampersdorf
+Langebrück
+Langenau (b. Brand-Erbisdorf)
+Langenau (Skalicec u Ceske Lipy)
+Langenbuch (Thüringen)
+Langenleuba-Oberhain
+Langenreichenbach
+Langenstein-Zwieberge (Anhalt)
+Langhennersdorf
+Lauban (Luban)
+Lausa
+Lauterbach (b. Neukirchen/Pleiße)
+Leipa (Ceskä Lipa)
+Leipzig, Bahn
+Leipzig, Stadtmitte
+Leipzig, Torgauer Straße
+Leipzig-Abtnaundorf/Heiterblick
+Leipzig-Engelsdorf (Riesaer Straße 64)
+Leipzig-Ost (Stadtrand)
+Leipzig-Schönau
+Leipzig-Schönefeld
+Leitmeritz (Litom&fice)
+Lengenfeld/V.
+Lengenfeld/V. OT Grün
+Lessa
+Leubetha
+Leuna (pr. Sachsen)
+Lichtenburg - Schloss, Prettin, (pr. Sachsen)
+Lichtensee
+Lichtenstein/Sa.
+Lichtentanne
+Liebenau
+Liebstadt
+Limbach/V.
+Lindenau
+Lindenhayn
+Linz (Österreich)
+Lippstadt (pr. Westfalen)
+Löbau
+Lobenstein
+Lobositz (Lovosice)
+Lommatzsch
+Lonnewitz
+Lorenzkirch
+Löthain
+Lübbenau (pr. Brandenburg)
+Lubens (Lubenec)
+Ludenberg (Breclav)
+Luditz (Zlutice)
+Luppa
+Machern
+Magdeburg (pr. Sachsen)
+Mährisch-Ostrau (Ostrava)
+Manetin (Manötin)
+Mannichswalde
+Maria Ratschitz (Mariänsk& Rad£ice)
+Marienbad (Mariänske Läazn&)
+Marienberg
+Markersdorf (b. Chemnitz)
+Markersdorf (Thüringen)
+Markkleeberg
+Marktrodach (Bayern)
+Massanei
+Mauthausen
+Meerane
+Mehltheuer
+Meinersdorf
+Meißen
+Meltewitz (Steinbruch)
+Merschwitz
+Merzdorf (b. Riesa)
+Meuselwitz (Thüringen)
+Milda (Thüringen)
+Mildenau
+Milkwitz
+Milstrich
+Mittelbach
+Mittweida
+Mobendorf
+Mobschatz
+Mochau
+Mockethal-Zatschke
+Mockrehna
+Moldau (Moldava)
+Morchenstern (Smrzovka)
+Mücka
+Mügeln
+Mühlau
+Mühlbeck (pr. Sachsen)
+Mühltroff
+Muldenberg
+Mülsen St. Micheln
+München
+Münsa (b. Altenburg)
+Mutzschen
+Mulda
+Nassau (b. Frauenstein)
+Naumburg (Thüringen)
+Naundorf (b. Freiberg)
+Neu Staßfurt (pr. Sachsen)
+Neudeck (Nejdek)
+Neudörfel (?)
+Neuhammer (Nove Hamry)
+Neuhirschstein (Schloss)
+Neukieritzsch
+Neukirch
+Neukirchen (b. Reinsberg)
+Neukirchen/Erzgeb.
+Neumark
+Neundorf (b. Lobenstein/Thüringen)
+Neundorf (b. Plauen)
+Neurohlau (Novä Role)
+Neusalz (Nowa Söl)
+Neuseddin, Güterbahnhof
+Neustadt/Sachsen
+Nieder-/Oberbobritzsch (Ortsgrenze)
+Niederau
+Niederfrauendorf
+Niederglauba
+Niedergurig
+Niederoderwitz
+Niederschlema
+Niedersteinbach (Thüringen)
+Niederstriegis
+Niederwiesa
+Niesky
+Nischwitz
+Nixdorf (Mikuläsovice)
+Nochten
+Nordhalben (Bayern)
+Nordhausen (pr. Sachsen)
+Nossen
+Nürnberg (Bayern)
+Ober Birken (Horni Briza)
+Oberaudenhain
+Oberbobritzsch
+Oberböhmsdorf (Thüringen)
+Obercolmnitz
+Obererinitz
+Obergruna
+Oberlungwitz
+Oberneuschöneberg
+Ober-Prauske
+Oberröppisch (Thüringen)
+Ockerwitz
+Oederan
+Oelsen
+Oelsitz
+Oelsnitz/Vogtland
+Olbernau
+Ortmannsdorf
+Oschatz
+Oschitz (Thüringen)
+Ostrau (b. Zörbig/pr. Sachsen)
+Ottendorf (Thüringen)
+Paderborn (pr. Westfalen)
+Passau (Bayern)
+Paußitz
+Pegau
+Penig
+Pesterwitz
+Peterswald (Petrovice)
+Petschau (Belov)
+Pfaffroda
+Pilsen (Plzei)
+Pirk
+Pirkenhammer (Brfezovä)
+Pirna
+Pladen (Blatno u Podboran)
+Plan (Planä)
+Plauen
+Plauen (ob. Bhf)
+Plauen, Roonstraße (L.-E-Schönherr-Straße)
+Plömnitz (Standort FAL „Bernburg“)
+Plötz (b. Löbejün/pr. Sachsen)
+Pockau-Lengefeld
+Podersam (Podborany)
+Pomßen
+Porschdorf
+Postelberg an der Eger (Postoloprty)
+Pötzschau
+Prag
+Praßles (Zbraslav)
+Pressel
+Prettin, (pr. Sachsen)
+Pretzsch/Elbe (pr. Sachsen)
+Pretzschendorf
+Priesen (Bfezno)
+Probsthain
+Profen (pr. Sachsen)
+Proschim (Preußen)
+Pulsnitz
+Quedlinburg (pr. Sachsen)
+Quersa
+Rabstein (Vesel& pod RabS$tejnem)
+Radeberg
+Radebeul
+Raguhn (pr. Sachsen)
+Raitzen
+Raspenau (Raspenava)
+Rattwitz (b. Bautzen)
+Rauscha (Ruszöw)
+Rautenkranz
+Regensburg (Bayern)
+Rehefeld
+Rehefeld-Zaunhaus
+Rehmsdorf (Thüringen)
+Reichenau (heute Hartsmannsdorf-
+Reichenau (Rychnov u Jablonce)
+Reichenbach (b. Waldheim)
+Reichenbach/V.
+Reichenberg (Liberec)
+Reichenbrand (b. Chemnitz)
+Reichwalde
+Reinholdshain (b. Dippoldiswalde)
+Reinholdshain (b. Glauchau)
+Reitzenhain
+Remersdorf
+Remse
+Rennersdorf (b. Herrnhut)
+Rennersdorf-Neudörfel
+Reppen
+Reuth/Sachsen
+Rieder (pr. Sachsen),
+Riemsdorf
+Riesa
+Rittersgrün
+Rochlitz
+Röderau
+Röhrsdorf (b. Klipphausen)
+Roßwein
+Rugiswalde
+Ruppendorf
+Ruppertsgrün (b. Plauen)
+Ruppertsgrün (b. Werdau), Römertal
+Rüßdorf
+Saalburg (Thüringen)
+Saara (Thüringen)
+Saatz (Zatec/Böhmen)
+Sachsgrün
+Sacka
+Sadisdorf
+Salhassan
+Salzburg (Österreich)
+Salzenforst
+Sangerhausen (pr. Sachsen)
+Sankt Egidien
+Sankt Georgenthal (Jiretin nad Jedlovou)
+Saupsdorf
+Sayda, großes Vorwerk
+Scheles (Zihle)
+Schenkenberg
+Schiedel
+Schildau
+Schlackenwerth (Ostrov nad Ohfi)
+Schlesiersee (Stawa)
+Schlieben (pr. Sachsen)
+Schmiedeberg (b. Dippoldiswalde)
+Schmiedeberg (Kovärskä)
+Schmorkau
+Schöna (b. Cavertitz)
+Schönbach/V.
+Schönebeck/Elbe (pr. Sachsen)
+Schönfeld (b. Dippoldiswalde)
+Schönfeld (b. Radeburg)
+Schönheide
+Schönlinde (Krasna Lipa/Böhmen)
+Schönwald (Lesnä u Tachova)
+Schwarzenbach {b. Hof)
+Schwarzenberg
+Schwarzheide (pr. Brandenburg)
+Sebnitz
+Scerhausen
+Seesen
+Seidenberg (Zawidöw)
+Seifersdorf (b. Großschirma)
+Seifhennersdorf
+Senftenberg (Preußen)
+Seyda (pr. Sachsen)
+Siebenbrunn
+Siebenlehn
+Sieglitz
+Siegmar-Schönau
+Sitzenroda
+Sohland am Rotstein
+Söllichau (pr. Sachsen)
+Sömmerda (Thüringen)
+Sonneberg (Thüringen)
+Sontra
+Sora
+Sosa
+Spitzcunnersdorf
+Spremberg (Preußen)
+Stangengrün
+Staucha
+Stauchitz
+Steinheidel
+Steinigtwolmsdorf
+Steinpleis - Bogendreieck
+Stollberg
+Stolpen
+Strehla
+Struppen
+Syrau
+Tachau (Tachov)
+Tannenbergsthal
+Taucha
+Taus (DomazZlice)
+Teichwolframsdorf (Thüringen)
+Teplitz-Schönau (Teplice)
+Tetschen (De£in)
+Thalheim
+Tharandt
+Theresienstadt (Terezin), Ghetto
+Theuma
+Thiendorf
+Töpeles (Teplicka)
+Torgau (pr. Sachsen)
+Treptitz
+Triebschitz b. Brüx (Tfebusice)
+Tröbitz/Elster
+Trossin (pr. Sachsen)
+Uhlsdorf
+Ullendorf
+Unter Sandau (Dolni Zandov)
+Venusberg
+Walburg (pr. Hessen-Nassau)
+Waldenburg (Sachsen)
+Waldheim
+Waldsassen
+Wallenfels (Bayern)
+Warmsdorf (pr. Sachsen)
+Warnsdorf (Varnsdorf)
+Weiden
+Weidenhain
+Weimar
+Weipert (Vejprty)
+Weißbach/Erzgeb.
+Weißenberg
+Weißenfels
+Weißensand
+Weißig (Thüringen)
+Weißwasser/Oberlausitz
+Welbsleben (pr. Sachsen)
+Welemin (Velemin)
+Wellaune
+Werdau
+Wermsdorf
+Wermsdorf (Schloss Hubertusburg)
+Wernigerode (preuß. Prov. Sachsen)
+Wien
+Wiesa (b. Kamenz)
+Wildenhain
+Wildenthal
+Wilischthal
+Willkowitz (Vlkovice)
+Wilsdruff
+Wittenberg/Elbe
+Wittichenau
+Wohlbach
+Wolfen (pr. Sachsen)
+Wolfsgrün
+Wolkenburg
+Wölmsdorf (Vilemov)
+Wurschen
+Wurzen
+Zahna
+Zehista (b. Pirna)
+Zeithain
+Zeitz (Thüringen)
+zellwald (Pitschetal A4)
+Zerbst (pr. Sachsen)
+Zinnwald
+Zipsendorf (Thüringen)
+Zittau
+zZlin (Zlin)
+7öblitz
+Zörbig (pr. Sachsen)
+7Zschachwitz
+Zschopau
+Zschornau
+Zwickau
+Zwickau-Planitz
+Zwickau-Planitz, Lengenfelder Str.
+Zwodau (Svatava)
+Zwönitz
+Zwota
+Zwöten (b. Gera)
