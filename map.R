@@ -6,6 +6,7 @@ library(shinyjs)
 
 csv <- read.csv(file="C:\\Users\\Fabian\\Documents\\data\\data.csv", encoding="UTF-8")
 locations <- read.csv(file="C:\\Users\\Fabian\\Documents\\data\\locations_matched_osrm.csv", encoding="UTF-8")
+saxony_geojson <- geojson_read("C:\\Users\\Fabian\\Documents\\data\\saxony.geojson")  # source: http://opendatalab.de/projects/geojson-utilities/
 
 data <- list()
 for(i in locations[,1]) { # TODO increase id in csv by one
@@ -101,7 +102,6 @@ polyline_width <- 3
 selected_polyline_width <- 6
 prev <- FALSE
 osrm <- FALSE
-saxony_geojson <- geojson_read("C:\\Users\\Fabian\\Documents\\data\\saxony.geojson")  # source: http://opendatalab.de/projects/geojson-utilities/
 
 server <- function(input, output, session) {
   
