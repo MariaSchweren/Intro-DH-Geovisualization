@@ -101,7 +101,6 @@ ui <- fluidPage(
                 mainPanel(leafletOutput("map", height="70vh"),
                           dateRangeInput("time", NULL, start="1945-01-01", end="1945-05-08", language="de", weekstart=1, width="500px"),
                           checkboxInput("osrm", "OSRM", FALSE),
-                          checkboxInput("cond", "Conditional Test", FALSE),
                           selectInput("route_selector", "Route", choices=csv[["Ort"]]),
                           actionButton("center", "Center"))
   )
@@ -162,6 +161,7 @@ server <- function(input, output, session) {
   }
   
   selectRoute <- function(id) {
+    updateSelectInput(session, "route_selector", selected = csv[id,"Ort"])
     type <- csv[[id, "Typ"]]
     if(prev) {
       leafletProxy('map') %>% clearGroup(group=as.character(prev))
