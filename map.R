@@ -17,9 +17,21 @@ for(i in locations[,1]) { # TODO increase id in csv by one
   entry <- list(lat=location_lat,lng=location_lng,osrm_lat=osrm_lat,osrm_lng=osrm_lng)
   data[[i+1]] <- entry 
 }
-type <- ""
+
+square_black <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/niE/yKR/niEyKRyoT.jpeg", iconWidth = 10, iconHeight = 10)
+square_green <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/nTE/Kyb/nTEKyb8TA.png", iconWidth = 10, iconHeight = 10)
+polyline_color <- "red"
+selected_polyline_color <- "black"
+polyline_width <- 3
+selected_polyline_width <- 6
+prev <- FALSE
+osrm <- FALSE
 
 ui <- fluidPage(
+  tags$head(tags$style(type = "text/css", paste0(".selectize-dropdown {
+                                                     bottom: 100% !important;
+                                                     top:auto!important;
+                                                 }}"))),
   shinyjs::useShinyjs(),
   sidebarLayout(position = "right",
                 sidebarPanel(
@@ -86,22 +98,14 @@ ui <- fluidPage(
                   hidden(div(id="transport", 
                              h4(1)))
                 ),
-                mainPanel(leafletOutput("map", height="85vh"),
+                mainPanel(leafletOutput("map", height="70vh"),
                           dateRangeInput("time", NULL, start="1945-01-01", end="1945-05-08", language="de", weekstart=1, width="500px"),
                           checkboxInput("osrm", "OSRM", FALSE),
                           checkboxInput("cond", "Conditional Test", FALSE),
+                          selectInput("route_selector", "Route", choices=csv[["Ort"]]),
                           actionButton("center", "Center"))
   )
 )
-
-square_black <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/niE/yKR/niEyKRyoT.jpeg", iconWidth = 10, iconHeight = 10)
-square_green <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/nTE/Kyb/nTEKyb8TA.png", iconWidth = 10, iconHeight = 10)
-polyline_color <- "red"
-selected_polyline_color <- "black"
-polyline_width <- 3
-selected_polyline_width <- 6
-prev <- FALSE
-osrm <- FALSE
 
 server <- function(input, output, session) {
   
@@ -158,6 +162,7 @@ server <- function(input, output, session) {
   }
   
   selectRoute <- function(id) {
+    type <- csv[[id, "Typ"]]
     if(prev) {
       leafletProxy('map') %>% clearGroup(group=as.character(prev))
       addRoute(prev, getColor(prev), polyline_width)
@@ -216,16 +221,20 @@ server <- function(input, output, session) {
   observeEvent(input$map_marker_click, {
     p <- input$map_marker_click
     id <- p$id
-    type <<- csv[[id, "Typ"]]
     selectRoute(id)
   })
-  shinyjs::useShinyjs()
+  
   observeEvent(input$map_shape_click, { 
     p <- input$map_shape_click
     id <- p$id
-    type <<- csv[[id, "Typ"]]
     selectRoute(id)
   })
+  
+  observeEvent(input$route_selector, { 
+    route_start <- input$route_selector
+    id <- which(csv$Ort == route_start)
+    selectRoute(id)
+  }, ignoreInit = TRUE)
   
   observeEvent(input$time, {
     leafletProxy('map') %>% clearMarkers() %>% clearShapes()
