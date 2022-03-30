@@ -9,16 +9,16 @@ locations <- read.csv(file="C:\\Users\\Fabian\\Documents\\data\\locations_matche
 saxony_geojson <- geojson_read("C:\\Users\\Fabian\\Documents\\data\\saxony.geojson")  # source: http://opendatalab.de/projects/geojson-utilities/
 
 data <- list()
-for(i in locations[,1]) { # TODO increase id in csv by one
-  location_lat = strsplit(locations[i+1, "location_lat"], " ")
-  location_lng = strsplit(locations[i+1, "location_lng"], " ")
-  osrm_lat = strsplit(locations[i+1, "osrm_lat"], ", ")
-  osrm_lng = strsplit(locations[i+1, "osrm_lng"], ", ")
+for(i in locations[,1]) {
+  location_lat = strsplit(locations[i, "location_lat"], " ")
+  location_lng = strsplit(locations[i, "location_lng"], " ")
+  osrm_lat = strsplit(locations[i, "osrm_lat"], ", ")
+  osrm_lng = strsplit(locations[i, "osrm_lng"], ", ")
   entry <- list(lat=location_lat,lng=location_lng,osrm_lat=osrm_lat,osrm_lng=osrm_lng)
-  data[[i+1]] <- entry 
+  data[[i]] <- entry 
 }
 
-square_black <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/niE/yKR/niEyKRyoT.jpeg", iconWidth = 10, iconHeight = 10)
+square_black <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/niE/yKR/niEyKRyoT.jpeg", iconWidth = 5, iconHeight = 5)
 square_green <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/nTE/Kyb/nTEKyb8TA.png", iconWidth = 10, iconHeight = 10)
 polyline_color <- "red"
 selected_polyline_color <- "black"
@@ -26,6 +26,7 @@ polyline_width <- 3
 selected_polyline_width <- 6
 prev <- FALSE
 osrm <- FALSE
+selected_route_id <- -1
 
 ui <- fluidPage(
   tags$head(tags$style(type = "text/css", paste0(".selectize-dropdown {
@@ -96,12 +97,30 @@ ui <- fluidPage(
                              h4("Verlauf/Orte"),
                              textOutput("verlauf_marsch"))),
                   hidden(div(id="transport", 
-                             h4(1)))
+                             h4("Haeftlingsstaerke"),
+                             textOutput("haeftlinge_transport"),
+                             h4("Evakuierung"),
+                             textOutput("evakuierung_transport"),
+                             h4("Verleib"),
+                             textOutput("verbleib_transport"),
+                             h4("Arbeitseinsatz"),
+                             textOutput("arbeit_transport"),
+                             h4("Herkunft"),
+                             textOutput("herkunft_transport"),
+                             h4("Anzahl Todesopfer"),
+                             textOutput("todesopfer_transport"),
+                             h4("Bekannte Opfer"),
+                             textOutput("bekannte_transport"),
+                             h4("Dauer des Bahntransports"),
+                             textOutput("bahntransport_dauer"),
+                             h4("Dauer der Evakuierung"),
+                             textOutput("evakuierung_dauer")))
                 ),
                 mainPanel(leafletOutput("map", height="70vh"),
                           dateRangeInput("time", NULL, start="1945-01-01", end="1945-05-08", language="de", weekstart=1, width="500px"),
                           checkboxInput("osrm", "OSRM", FALSE),
                           selectInput("route_selector", "Route", choices=csv[["Ort"]]),
+                          checkboxInput("route_only", "Nur ausgewaehlte Route anzeigen: ", FALSE),
                           actionButton("center", "Center"))
   )
 )
@@ -114,7 +133,6 @@ server <- function(input, output, session) {
                                 addGeoJSON(saxony_geojson, color="blue", fill=FALSE))
   
   getColor <- function(id) {
-    shinyjs::useShinyjs()
     name <- csv[id, "Name"]
     if(name == "Aussenlager KZ Flossenbuerg") {
       color <- "orange"
@@ -161,6 +179,7 @@ server <- function(input, output, session) {
   }
   
   selectRoute <- function(id) {
+    selected_route_id <<- id
     updateSelectInput(session, "route_selector", selected = csv[id,"Ort"])
     type <- csv[[id, "Typ"]]
     if(prev) {
@@ -215,6 +234,18 @@ server <- function(input, output, session) {
       shinyjs::hide(id="aussenlager")
       shinyjs::hide(id="marsch")
       shinyjs::show(id="transport")
+      output$name <- renderText({csv$Name[id]})
+      output$ort <- renderText({csv$Ort[id]})
+      output$betreiber <- renderText({csv$Betreiber[id]})
+      output$haeftlinge_transport <- renderText({csv$H.ftlingsst.rke[id]})
+      output$evakuierung_transport <- renderText({csv$Evakuierung[id]})
+      output$verbleib_transport <- renderText({csv$Verbleib[id]})
+      output$arbeit_transport <- renderText({csv$Arbeitseinsatz[id]})
+      output$herkunft_transport <- renderText({csv$Herkunft[id]})
+      output$todesopfer_transport <- renderText({csv$Anzahl.Todesopfer[id]})
+      output$bekannte_transport <- renderText({csv$Bekannte.Opfer[id]})
+      output$bahntransport_dauer <- renderText({csv$Dauer.des.Bahntransports[id]})
+      output$evakuierung_dauer <- renderText({csv$Dauer.der.Evakuierung[id]})
     }
   }
   
@@ -229,6 +260,23 @@ server <- function(input, output, session) {
     id <- p$id
     selectRoute(id)
   })
+  
+  observeEvent(input$route_only, { 
+    if(selected_route_id != -1) {
+      if(input$route_only) {
+        leafletProxy('map') %>% clearMarkers() %>% clearShapes()
+        addRoute(selected_route_id, selected_polyline_color, selected_polyline_width)
+      } else {
+        leafletProxy('map') %>% clearMarkers() %>% clearShapes()
+        for(i in 1:length(data)) {
+          if(i != selected_route_id & csv[[i, "Datum"]] >= input$time[1] & csv[[i, "Datum"]] <= input$time[2]) {
+            addRoute(i, getColor(i), polyline_width)
+          }
+        }
+        addRoute(selected_route_id, selected_polyline_color, selected_polyline_width)
+      }
+    }
+  }, ignoreInit = TRUE)
   
   observeEvent(input$route_selector, { 
     route_start <- input$route_selector

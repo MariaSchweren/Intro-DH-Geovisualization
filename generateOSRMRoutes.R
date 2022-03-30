@@ -8,9 +8,10 @@ locations <- read.csv(file="C:\\Users\\Fabian\\Documents\\data\\locations_matche
 
 data <- list()
 for(i in locations[,1]) {
-  location_lat = strsplit(locations[i+1,4], " ")
-  location_lng = strsplit(locations[i+1,5], " ")
-  data[[i+1]] <- list(lat=location_lat,lng=location_lng)
+  location = locations[i,2]
+  location_lat = strsplit(locations[i,4], " ")
+  location_lng = strsplit(locations[i,5], " ")
+  data[[i]] <- list(location=location, lat=location_lat,lng=location_lng)
 }
 
 empty_vec <- rep(1, length(data))
@@ -18,6 +19,7 @@ locations$osrm_lat <- empty_vec
 locations$osrm_lng <- empty_vec
 
 for(i in 1:length(data)) {
+  print(data[[i]]$location)
   lat <- as.numeric(data[[i]]$lat[[1]])
   lng <- as.numeric(data[[i]]$lng[[1]])
   if(length(data[[i]]$lat[[1]]) == 1) {
@@ -25,7 +27,7 @@ for(i in 1:length(data)) {
     val2 <- lng
   } else {
     for(x in 1:(length(lat)-1)) {
-      route_tmp <- osrmRoute(src=c(lng[x], lat[x]), dst=c(lng[x+1], lat[x+1])) # osrmRoute format is lng/lat!
+      route_tmp <- osrmRoute(src=c(lng[x], lat[x]), dst=c(lng[x+1], lat[x+1])) # osrmRoute format is lng/lat! (???)
       if(x == 1) {
         route <- route_tmp
       } else {
@@ -39,4 +41,4 @@ for(i in 1:length(data)) {
   locations[i,7] <- toString(val2)
 }
 
-write.csv(locations, "C:\\Users\\Fabian\\Documents\\data\\locations_matched_osrm.csv", row.names = FALSE)
+write.csv(locations, "C:\\Users\\Fabian\\Documents\\data\\locations_matched_osrm.csv", row.names = FALSE, fileEncoding="UTF-8")
