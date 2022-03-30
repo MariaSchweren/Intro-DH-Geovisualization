@@ -2,13 +2,14 @@
 21;Abteroda;Abteroda;50.9028,10.0764;Q334483;;;
 22;Adelsdorf;Adelsdorf;51.319373,13.582835;Q45147106;;b. Großenhain;
 23;Adorf/Erzgebirge;Adorf/Erzgeb.;50.7564,12.8768;Q366362;;;
+2014;Aken/Elbe;Aken;51.8539,12.0431;;;
 24;Albernau;Albernau;50.548888888889,12.655833333333;Q2637402;;;
 25;Alsleben;Alsleben;51.701,11.68;Q488270;;(pr. Sachsen;
 31;Alt-Sedlitz;Staré Sedliště;49.744451332948,12.694192915077;Q788911;;;Alt Zedlisch
 26;Altenberg;Altenberg;50.764444444444,13.757777777778;Q436724;;;
 27;Altenburg;Altenburg;50.985,12.433333333333;Q15976;;(Thüringen);
 29;Altendorf;Altendorf (Altenberga);50.8375,11.5744;Q436970;;(Thüringen);
-30;Altsattel;Altsattel;;Q95609095;;;
+30;Altsattel;Altsattel;51.214985,13.260419;Q95609095;;;
 33;Annaberg/Erzgeb.;Annaberg;50.58015,13.00231;Q51164090;;(Annaberg-Buchholz);
 35;Annaburg;Annaburg;51.732777777778,13.045555555556;Q490413;;(pr. Sachsen;
 36;Ansprung;Ansprung;50.6477,13.2578;Q570161;;;
@@ -20,6 +21,7 @@
 42;Auerbach/V.;Auerbach;50.509444444444,12.4;Q46843;;;
 43;Auperschien;Úpořiny;50.6158,13.8744;Q11087120;;(Bystrany, Sudeten);Auperschin
 44;Auschwitz;Auschwitz;50.0262,19.2041;Q7341;;;Oświęcim
+2027;Auschwitz-Monowitz;Auschwitz-Monowitz;50.0355,19.278;;;;
 45;Aussig;Ústí nad Labem;50.659166666667,14.041666666667;Q156974;;;
 49;Authausen;Authausen;51.5917,12.6789;Q784543;;;
 50;Bad Düben;Bad Düben;51.591944444444,12.585277777778;Q12041;;(pr. Sachsen);
@@ -28,7 +30,6 @@
 53;Bad Muskau;Bad Muskau;51.549722222222,14.72;Q165131;;(pr. Niederschlesien) – Oberlausitz;
 54;Bad Schandau;Bad Schandau;50.916666666667,14.15;Q6406;;;
 55;Bad Sulza;Bad Sulza concentration camp;51.0889,11.6247;Q443316;;(Thüringen);
-;;;51.083301,11.6;;;;
 56;Bahratal;Bahratal;50.83333,13.96667;Q21152945;;Bad Gottleuba;
 57;Ballenstedt;Ballenstedt;51.72,11.2375;Q50886;;(pr. Sachsen) Harz;
 58;Bärenfels;Bärenfels;50.794722222222,13.673888888889;Q1019100;;Osterzgebirge;Altenberg-Bärenfels
@@ -42,6 +43,7 @@
 69;Bennewitz;Bennewitz;51.359722222222,12.711388888889;Q10741;;bei Wurzen;
 71;Berga;Berga;51.456666666667,11.007777777778;Q648358;;Mansfeld, Südharz;
 72;Berga/Elster;Berga;50.75,12.166666666667;Q276150;;(Thüringen);
+2022;Bergen;Bergen/Adorf;50.4738,12.2752;;;;
 73;Bergen-Belsen;Bergen-Belsen concentration camp;52.758899,9.907099;Q7332;;;
 75;Berggießhübel;Berggießhübel;50.87442,13.94641;Q15096887;;;
 76;Berlin;Berlin;52.516666666667,13.383333333333;Q64;;;
@@ -62,7 +64,6 @@
 99;Bodenbach;Podmokly;50.7744,14.1989;Q12045917;;(Podmokly);
 100;Böhlen;Böhlen;51.2025,12.385833333333;Q10743;;(b. Dahlen);
 869;Bolkenhain;Gmina Bolków;50.933333333333,16.1;Q2461704;;(Bolköw);
-;;;50.9206,16.1005;;;;
 101;Boragk;Boragk;51.4225,13.2635;Q893298;;(b. Mühlberg);
 102;Börnersdorf;Börnersdorf;50.82524,13.87869;Q15096891;;;
 103;Bornitz;Bornitz;51.3044,13.1806;Q893997;;;
@@ -76,7 +77,7 @@
 111;Breitenbrunn;Breitenbrunn;50.474722222222,12.766666666667;Q57731;;;
 112;Breslau-Hundsfeld;Wrocław Psie Pole;51.1504,17.1192;Q9378102;;Wroclaw Psie Pole;
 113;Brieg;Brzeg;50.866666666667,17.483333333333;Q214640;;(Brzeg);
-114;Brünst;Brünst;;;;(Bayern);
+114;Brünst;Brünst egal;;;;(Bayern);
 115;Brüx;Most;50.503055555556,13.636666666667;Q146363;;(Most);Most
 117;Buchau;Bochov;50.151005211385,13.045244542696;Q512631;;(Bochov);
 118;Buchenwald;Buchenwald concentration camp;51.021198,11.248999;Q152802;;;
@@ -107,15 +108,15 @@
 160;Dalena;St. Marien (Dalena);51.64612,11.84203;Q86454777;;;
 161;Dallwitz;Dalovice;50.247898908819,12.895890203512;Q1158072;;(Dalovice);
 162;Deggendorf;Deggendorf;48.835277777778,12.964444444444;Q16083;;(Bayern);
-163;Dehnitz;Dehnitz;;Q98381441;;(b. Wurzen);
+163;Dehnitz;Dehnitz;51.3519771,12.7278574;Q98381441;;(b. Wurzen);
 164;Delitzsch;Delitzsch;51.526388888889,12.3425;Q12052;;;
 165;Dessau;Dessau;51.834166666667,12.246111111111;Q487070;;(Land Anhalt);
 166;Deutsch Paulsdorf;Deutsch Paulsdorf;51.1,14.83;Q1201820;;;
 167;Deutschbaselitz;Deutschbaselitz;51.2833,14.1333;Q1201964;;;
 168;Deutschenbora;Deutschenbora;51.0596,13.361;Q1204564;;;
 169;Dippoldiswalde;Dippoldiswalde;50.893333333333,13.666666666667;Q6462;;;
-170;Dittersbach;Dittersbach;;;;;
-171;Dittersbach,;Dittersbach,;;;Ortsgrenze Neuhausen/Erzgeb.;;
+170;Dittersbach;Dittersbach;50.6753283,13.4473569;;;;
+171;Dittersbach,;Dittersbach, Ortsgrenze Neuhausen;50.6755491,13.4541981;;Ortsgrenze Neuhausen/Erzgeb.;;
 172;Dittmannsdorf;Dittmannsdorf;50.7799,13.0497;Q1230399;;(b. Gronau);
 173;Döbeln;Bahnhof Gärtitz;51.1428988,13.1193907;Q29587240;;(Sandgrube Gärtitz);
 174;Döbeln;Döbeln Stadt;51.119444444444,13.112777777778;Q71163;;(Stadt);
@@ -176,6 +177,7 @@
 239;Falkenberg/Elster;Falkenberg/Elster;51.583055555556,13.232222222222;Q570094;;(pr.;Sachsen)
 240;Falkenstein/V.;Falkenstein, Saxony;50.466666666667,12.366666666667;Q46863;;;
 334;Falkenstein/V.;Falkenstein, Saxony;50.466666666667,12.366666666667;Q46863;;;
+2029;Finsterwalde;Finsterwalde;51.6303,13.7085;;;;
 241;Fischbach;Fischbach;51.0847,14.0181;Q1419738;;;
 335;Fischbach;Fischbach;51.0847,14.0181;Q1419738;;;
 242;flöha;Flöha;50.855833333333,13.071388888889;Q71166;;;
@@ -193,15 +195,15 @@
 256;Freystadt;Kożuchów;51.75,15.6;Q142101;;(Kozuchöw);
 257;Friedebach;Friedebach;50.7258,13.4511;Q1456455;;(b.;Sayda)
 258;Friedersdorf/G.;Friedersdorf;51.096,14.869;Q1417551;;(b.;Görlitz)
-259;Friedersdorf;Friedersdorf;50.8444,13.5214;Q2696708;;(b.;Pretzschendorf)
+259;Friedersdorf/P.;Friedersdorf;50.8444,13.5214;Q2696708;;(b.;Pretzschendorf)
 352;Friedersdorf/G.;Friedersdorf;51.096,14.869;Q1417551;;(b.;Görlitz)
-353;Friedersdorf;Friedersdorf;50.8444,13.5214;Q2696708;;(b.;Pretzschendorf)
+353;Friedersdorf/P.;Friedersdorf;50.8444,13.5214;Q2696708;;(b.;Pretzschendorf)
 260;fürstenau;Fürstenau;50.7375,13.8319;Q1483014;;(b.;Geising)
 355;Fürstenwalde;Fürstenwalde;50.7608,13.8675;Q1483535;;(b.;Geising)
 264;Gassen;Jasień, Lubusz Voivodeship;51.751388888889,15.0175;Q164241;;(Jasien);
-266;Gassenreuth;Gassenreuth;;;;;
+266;Gassenreuth;Gassenreuth;50.3362467,12.0511470;;;;
 361;Gebelzig;Gebelzig;51.223611111111,14.669444444444;Q160444;;;
-362;Gebhardtsdorf;Giebułtów, Lower Silesian Voivodeship;50.97833333,15.34694444;Q654868;;(Giebultöw);
+362;Gebhardtsdorf;Giebułtów, Lower Silesian Voivodeship;50.97833333,15.34694444;Q654868;;(Giebultów);
 269;Geising;Geising;50.758055555556,13.791111111111;Q572891;;;
 364;Gelobtland;Gelobtland;50.625863,13.177621;;;;
 272;Georgenberg;Georgenberg;49.70361111111111,12.419722222222223;;;(Bayern);
@@ -224,13 +226,14 @@
 391;Göltzschtalbrücke;Göltzschtalbrücke;50.580406,12.302871;;;;
 392;Görlitz;Görlitz;51.152777777778,14.987222222222;;;(pr.;Niederschlesien)
 395;Görschlitz;Görschlitz;51.578,12.6499;Q1559571;;;
+2025;Gössnitz;Gössnitz;50.8904,12.4311;;;;
 396;Goslar;Goslar;51.906003,10.429163;;;(Hannover);
 397;Gospersgrün;Römersgrün;50.67992,12.37185;;;OT;Römersgrün
 398;Goßberg;Goßberg;50.98944444,13.20388889;;;;
 399;Gößnitz;Gößnitz;50.890277777778,12.432777777778;;;(Thüringen);
 400;Gottesgab;Boží Dar;50.409844098288,12.924545971721;;;(BoZi;Dar)
 401;Gottesgrün;Gottesgrün;50.6725,12.3025;Q1538994;;(Thüringen);
-402;Gottleuba;Bad Gottleuba;;;;;
+402;Gottleuba;Bad Gottleuba;50.8514230,13.9445243;;;;
 403;Gräfenwarth;Gräfenwarth;50.5303,11.7536;Q1551439;;(Thüringen);
 404;Graslitz;Kraslice;50.323842588747,12.517556147716;;;(Kraslice);
 406;Griesbach;Bad Griesbach im Rottal;48.45,13.2;;;(Bayern);
@@ -256,6 +259,7 @@
 433;Grünberg;Zielona Góra;51.939722222222,15.505;;;(Zielona;Göra)
 434;Grünhain;Grünhain;50.578611111111,12.808888888889;Q1552242;;;
 435;Grünhainichen;Grünhainichen;50.7675,13.153888888889;Q57776;;;
+2026;Gunskirchen;Gunskirchen concentration camp;48.112506,13.940330;;;;
 436;Gunzen;Gunzen;50.355,12.3344;Q1555079;;;
 2001;Gusen;Gusen concentration camp;48.25701,14.464133;;;
 437;Gutenfürst;Gutenfürst;50.419082,11.964484;;;;
@@ -269,8 +273,8 @@
 449;Halsbrücke;Halsbrücke;50.95,13.349722222222;;;;
 450;Hartha;Harthaer Kreuz TP;51.10195,12.9493;;;(b.;Waldheim)
 451;Hartha;Harthaer Kreuz TP;51.10195,12.9493;;Harthaer Kreuz;;
-452;Hartmannsdorf;Miłoszów;51.00479,15.24868;;;(b.;Chemnitz)
-453;Hartmannsdorf;Miłoszów;51.00479,15.24868;;;(Miloszöw);
+452;Hartmannsdorf;Hartmannsdorf bei Chemnitz;50.88666666666667,12.799444444444445;;;(b.;Chemnitz)
+453;Hartmannsdorf/M.;Miłoszów;51.00479,15.24868;;;(Miloszöw);
 454;Harzungen;Harzungen concentration camp;51.5564,10.8039;;;(pr.;Sachsen)
 455;Hauptmannsgrün;Hauptmannsgrün;50.627066,12.392591;Q43302018;;;
 456;Hausdorf;Hausdorf (Colditz);51.11730194,12.83562088;;;(b.;Colditz)
@@ -283,6 +287,7 @@
 463;Helmsdorf;Helmsdorf;51.0389,14.0375;;;;
 464;Hennersdorf;Hennersdorf;50.8247,13.6253;;;;
 465;Hermsdorf/Erzgebirge;Hermsdorf/Erzgeb.;50.761111111111,13.629722222222;Q6724;;;
+2023;Hermsgrün;Hermsgrün;50.3469,12.2876;;;;
 467;Herrnsdorf;Herrnsdorf;50.895309,12.662392;;;;
 475;Hertine;Rtyně nad Bílinou;50.603609611728,13.908807053015;Q2026383;;(Rtyne);
 476;Herzberg am Harz;Herzberg am Harz;51.655555555556,10.339444444444;;;;
@@ -295,8 +300,8 @@
 870;Hirschberg;Jelenia Góra;50.9,15.733333333333;;;(Jelenia;Göra)}
 483;Hirschenstand;Jelení;50.39638889,12.66888889;;;(Jeleni);
 484;Höckendorf;Höckendorf;50.92518,13.58913;;;;
-485;Hof;Hof;51.2402,13.1891;;;(b.;Stauchitz)
-486;Hof;Hof;50.31666666666667,11.916666666666666;;;(Bayern);
+485;Hof/S.;Hof;51.2402,13.1891;;;(b.;Stauchitz)
+486;Hof/B.;Hof;50.31666666666667,11.916666666666666;;;(Bayern);
 488;Hohenprießnitz;Hohenprießnitz;51.532669444444,12.597197222222;Q1623768;;;
 489;Hohenstein-Ernstthal;Hohenstein-Ernstthal;50.8,12.716666666667;;;;
 490;Hohentanne;Hohentanne;50.985836,13.311043;;;;
@@ -316,7 +321,7 @@
 515;Kaschitz;Kaštice;50.2647,13.4283;;;(Kastice);
 516;Kauern;Kirche Kauern;50.844592,12.145017;;;(Thüringen);
 517;Kemtau;Kemtau;50.738888888889,12.960555555556;Q1631805;;;
-524;Kirch-Edlau;Kirch-Edlau;;;;(pr.;Sachsen)
+524;Kirch-Edlau;Kirch-Edlau;51.6775449,11.8193968;;;(pr.;Sachsen)
 525;Kittlitztreben;Trzebień, Lower Silesian Voivodeship;51.38442,15.60238;Q7848970;;;
 526;Kitzscher;Kitzscher;51.164444444444,12.553611111111;;;;
 527;Klaffenbach;Klaffenbach;50.7611,12.9139;;;;
@@ -326,6 +331,7 @@
 531;Kleinschirma;Kleinschirma;50.906366,13.288898;Q27479035;;;
 532;Kleinvoigtsberg;Kleinvoigtsberg;50.998588,13.306545;Q27479113;;;
 533;Kleinwaltersdorf;Kleinwaltersdorf;50.931944444444,13.302777777778;Q1773946;;;
+2015;Kleinzschepa;Kleinzschepa;51.41249285510254,12.778153320851015;;;;
 534;Klingenberg;Klingenberg;50.9019,13.5441;;;;
 535;Klingenthal;Klingenthal;50.366944444444,12.468611111111;;;;
 536;Klitten;Klitten;51.35,14.599722222222;;;;
@@ -367,18 +373,19 @@
 583;Lauban;Lubań;51.116666666667,15.3;;;(Luban);
 584;Lausa;Lausa;51.4333,13.0561;;;;
 585;Lauterbach;Lauterbach;50.7786,12.4015;;;(b.;Neukirchen/Pleiße)
+2020;Lehesten;Lehesten;50.4743,11.4522;;;;
 586;Leipa;Česká Lípa;50.68558429129,14.53774710235;Q2177049;;(Ceskä;Lipa)
 593;Leipzig-Abtnaundorf/Heiterblick;Abtnaundorf;51.3706,12.4179;;;;
 596;Leipzig-Engelsdorf;Leipzig-Engelsdorf;51.3382,12.4799;Q1342174;Riesaer Str. 64;;
-598;Leipzig-Ost;Leipzig-Ost;;;;(Stadtrand);
+598;Leipzig-Ost;Leipzig-Ost;51.3433889,12.5282285;;;(Stadtrand);
 599;Leipzig-Schönau;Leipzig-Schönau (ATG) concentration camp;51.299999,12.333299;;;;
 601;Leipzig-Schönefeld;Schönefeld;51.3597,12.4104;;;;
 587;Leipzig,;Leipzig Hauptbahnhof;51.34527777777778,12.382222222222222;;Bahn;;
 591;Leipzig,;Leipzig Mitte;51.34,12.375;;Stadtmitte;;
-592;Leipzig,;Torgauer Platz;;;Torgauer Straße;;
+592;Leipzig,;Torgauer Platz;51.3467941,12.4176054;;Torgauer Straße;;
 603;Leitmeritz;Litoměřice;50.53355947692,14.131899491403;;;(Litom&fice);
 611;Lengenfeld/V.;Lengenfeld;50.566666666667,12.366666666667;;;;
-619;Lengenfeld/V.;Grün;;;;OT;Grün
+619;Lengenfeld/G.;Grün;50.5673097,12.3831018;;;OT;Grün
 620;Lessa;Q42868747;51.3207,13.3042;;;;
 621;Leubetha;Leubetha;50.349,12.246;Q16832838;;;
 622;Leuna;Leuna;51.316666666667,12.016666666667;;;(pr.;Sachsen)
@@ -386,7 +393,7 @@
 624;Lichtensee;Lichtensee;51.38,13.37472222;;;;
 625;Lichtenstein/Sa.;Lichtenstein;50.756388888889,12.631666666667;Q20081;;;
 626;Lichtentanne;Lichtentanne;50.7,12.433333333333;;;;
-627;Liebenau;Liebenau;;;;;
+627;Liebenau;Liebenau (Zuordnung nicht möglich, vermutl. 50.7876039, 13.8539649);;;;;
 628;Liebstadt;Liebstadt;50.864722222222,13.855555555556;;;;
 629;Limbach/V.;Limbach;50.583330555555555,12.25;;;;
 630;Lindenau;Lindenau;50.5883,12.604;;;;
@@ -410,11 +417,11 @@
 652;Mährisch-Ostrau;Moravská Ostrava;49.8418,18.2916;Q3524703;;(Ostrava);
 653;Manetin;Manětín;49.991879087154,13.233260034019;;;(Manötin);
 654;Mannichswalde;Mannichswalde;50.806388888889,12.31;Q1665421;;;
-655;Maria;Mariánské Radčice;50.574127676768,13.665087330687;;;Ratschitz;(Mariänsk&
-656;Marienbad;Mariánské Lázně;49.964703891769,12.701249703911;;;(Mariänske;Läazn&)
+655;Maria Ratschitz;Mariánské Radčice;50.574127676768,13.665087330687;;;Ratschitz;
+656;Marienbad;Mariánské Lázně;49.964703891769,12.701249703911;;;
 657;Marienberg;Marienberg;50.650833333333,13.164722222222;;;;
 658;Markersdorf;Markersdorf;50.7931,12.9;;;(b.;Chemnitz)
-659;Markersdorf;Markersdorf;50.8363,12.0003;;;(Thüringen);
+659;Markersdorf/T.;Markersdorf;50.8363,12.0003;;;(Thüringen);
 660;Markkleeberg;Markkleeberg;51.275555,12.369166;;;;
 668;Marktrodach;Marktrodach;50.249444444444,11.385833333333;;;(Bayern);
 669;Massanei;fire station Massanei;51.06497350435683,13.052825000727154;;;;
@@ -426,12 +433,14 @@
 676;Meltewitz;Meltewitz;51.3625,12.908888888888889;;;(Steinbruch);
 677;Merschwitz;Merschwitz;51.2647,13.4075;;;;
 679;Merzdorf;Merzdorf;51.31055,13.25312;;;(b.;Riesa)
+2021;Meßbach;Meßbach;49.7484,8.8080;;;;
 680;Meuselwitz;Meuselwitz;51.05,12.3;;;(Thüringen);
 682;Milda;Milda;50.855806,11.463175;;;(Thüringen);
 683;Mildenau;Mildenau;50.599722222222,13.068888888889;;;;
 684;Milkwitz;Milkwitz;51.230109,14.358092;Q1754124;;;
 685;Milstrich;Milstrich;51.325,14.159722222222;Q160955;;;
 686;Mittelbach;Mittelbach;50.8,12.7978;;;;
+2011;Mittelbau-Dora;Mittelbau-Dorau concentration camp;51.535524,10.748665;;;;
 687;Mittweida;Mittweida;50.985555555556,12.981111111111;;;;
 688;Mobendorf;Mobendorf;50.97555556,13.19055556;Q15835417;;;
 689;Mobschatz;Mobschatz;51.0775,13.6433;;;;
@@ -451,6 +460,7 @@
 704;München;Munich;48.1375,11.575;;;;
 705;Münsa;Münsa;50.9843,12.4747;;;(b.;Altenburg)
 706;Mutzschen;Mutzschen;51.266667,12.9;Q668396;;;
+2030;Nammering;Nammering;48.7045,13.3094;;;;
 714;Nassau;Nassau;50.766666666667,13.533333333333;;;(b.;Frauenstein)
 715;Naumburg;Naumburg (Saale);51.152095,11.809819;;;(Thüringen);
 716;Naundorf;Naundorf;50.935,13.4206;;;(b.;Freiberg)
@@ -458,6 +468,7 @@
 718;Neudeck;Nejdek;50.322532483831,12.729443668258;;;(Nejdek);
 719;Neudörfel;Nová Víska;51.0089,14.2839;;;(?);
 720;Neuhammer;Nové Hamry;50.360161626906,12.719289348652;;;(Nove;Hamry)
+2019;Neuhaus;Neuhaus am Rennweg;50.5059,11.1423;;;;
 721;Neuhirschstein;Neuhirschstein Castle;51.2518,13.4003;Q2241597;;(Schloss);
 723;Neukieritzsch;Neukieritzsch;51.151388888889,12.409722222222;;;;
 724;Neukirch;Neukirch/Lausitz;51.09727,14.30789;;;;
@@ -474,16 +485,16 @@
 735;Nieder-/Oberbobritzsch;Bobritzsch;50.899444444444,13.433333333333;;;(Ortsgrenze);
 736;Niederau;Niederau;51.175555555556,13.5425;;;;
 737;Niederfrauendorf;Niederfrauendorf;50.879461111111,13.722611111111;Q1987786;;;
-738;Niederglauba;Niederglauba;;;;;
+738;Niederglauba;Niederglauba;51.557856,12.574054;;;;
 739;Niedergurig;Niedergurig;51.226944444444,14.478888888889;Q160604;;;
 740;Niederoderwitz;Oderwitz;50.958888888889,14.718611111111;Q502467;;;
-741;Niederschlema;Niederschlema;50.6051,12.6712;;;;
+741;Niederschlema;Niederschlema;50.6160610,12.6809977;;;;
 742;Niedersteinbach;Niedersteinbach;50.9431,12.6511;;;(Thüringen);
 743;Niederstriegis;Niederstriegis;51.083611111111,13.149444444444;Q71017;;;
 744;Niederwiesa;Niederwiesa;50.863333333333,13.0225;;;;
 745;Niesky;Niesky;51.289722222222,14.83;Q165160;;;
 746;Nischwitz;Nischwitz;51.3944,12.7125;;;;
-747;Nixdorf;Mikulášovice;50.965147575772,14.36380182721;;;(Mikuläsovice);
+747;Nixdorf;Mikulášovice;50.965147575772,14.36380182721;;;;
 748;Nochten;Nochten;51.431944444444,14.6;Q162561;;;
 749;Nordhalben;Nordhalben;50.373611111111,11.511111111111;;;(Bayern);
 750;Nordhausen;Nordhausen;51.505,10.791111111111;;;(pr.;Sachsen)
@@ -506,6 +517,7 @@
 778;Oelsitz;Oelsitz;51.27978,13.27732;Q47097330;;;
 779;Oelsnitz/Vogtland;Oelsnitz;50.416666666667,12.166666666667;Q46845;;;
 780;Olbernhau;Olbernhau;50.666666666667,13.333333333333;;;;
+2016;Oppitsch,Oppitzsch;51.336275, 13.256973;;;;
 781;Ortmannsdorf;Ortmannsdorf;50.70498,12.61663;;;;
 782;Oschatz;Oschatz;51.300277777778,13.107222222222;;;;
 785;Oschitz;Oschitz;50.565,11.7881;;;(Thüringen);
@@ -513,14 +525,14 @@
 787;Ottendorf;Ottendorf;50.827012,11.822534;;;(Thüringen);
 790;Paderborn;Paderborn;51.71666666666667,8.766666666666667;;;(pr.;Westfalen)
 791;Passau;Passau;48.566666666667,13.466666666667;;;(Bayern);
-792;Paußnitz;Paußnitz;;;;;Paußitz
+792;Paußnitz;Paußnitz;51.3876113,13.2025968;;;;Paußitz
 793;Pegau;Pegau;51.166666666667,12.25;;;;
 794;Penig;Penig;50.933611111111,12.705833333333;;;;
 795;Pesterwitz;Pesterwitz;51.0281,13.6539;Q6366;;;
 796;Peterswald;Petrovice;50.789108789384,13.976253100741;;;(Petrovice);
 798;Petschau;Bečov nad Teplou;50.08356335304,12.838387437158;Q854597;;(Belov);
 799;Pfaffroda;Pfaffroda;50.861388888889,12.515;;;;
-800;Pilsen;Plzeň;49.741388888889,13.3825;;;(Plzei);
+800;Pilsen;Plzeň;49.741388888889,13.3825;;;(Plzen);
 801;Pirk;Pirk;50.423887,12.066091;;;;
 808;Pirkenhammer;Březová;50.197990706513,12.871523243562;Q1021721;;(Brfezovä);
 809;Pirna;Pirna;50.962222222222,13.940277777778;;;;
@@ -538,6 +550,7 @@
 826;Porschdorf;Porschdorf;50.9418,14.12687;Q554695;;;
 827;Postelberg an der Eger;Postoloprty;50.359880648319,13.702996227431;;;(Postoloprty);
 828;Pötzschau;Pötzschau;51.211138888889,12.485030555556;Q2120876;;;
+2013;Prachatitz;Prachatice;49.0109,14.0000;;;;
 829;Prag;Prague;50.083333333333,14.416666666667;;;;
 830;Praßles;Zbraslav;50.0364,13.1406;Q10857370;;(Zbraslav);
 831;Pressel;Pressel;51.579,12.7043;Q1300978;;;
@@ -554,8 +567,9 @@
 846;Rabstein;Rabstein concentration camp;50.8007838,14.386125;;;(Vesel&;pod
 847;Radeberg;Radeberg;51.116666666667,13.916666666667;;;;
 848;Radebeul;Radebeul;51.103333333333,13.67;;;;
+2017;Radeburg;Radeburg;51.2130,13.7233;;;;
 849;Raguhn;Raguhn concentration camp;51.716701,12.3;;;(pr.;Sachsen)
-857;Raitzen;Raitzen;;Q956752;;;
+857;Raitzen;Raitzen;51.2601621,13.1876528;;;;
 858;Raspenau;Raspenava;50.904211053115,15.114763824276;Q1258284;;(Raspenava);
 859;Rattwitz;Rattwitz/Ratarjecy;51.183519,14.390443;;;(b.;Bautzen)
 860;Rauscha;Ruszów, Lower Silesian Voivodeship;51.40055556,15.18305556;Q7382740;;(Ruszöw);
@@ -567,7 +581,6 @@
 865;Rehmsdorf;Rehmsdorf;51.058333333333,12.215555555556;Q2138998;;(Thüringen);
 866;Reichenau;Reichenau;50.7931,13.575;;;(heute;Hartsmannsdorf-
 868;Reichenau;Reichenau;50.7931,13.575;;;(Rychnov;u
-;;;;;;;
 871;Reichenbach;Reichenbach;51.0463,13.0899;;(b.;Waldheim)
 872;Reichenbach/V.;Reichenbach/V.;50.6175,12.2990;;;
 873;Reichenberg;Liberec;50.7699972,15.0584492;;;(Liberec);
@@ -576,7 +589,7 @@
 876;Reinholdshain/D.;Reinholdshain;50.8976,13.7003;;;(b.;Dippoldiswalde)
 877;Reinholdshain/G.;Reinholdshain;50.8361,12.5686;;;(b.;Glauchau)
 878;Reitzenhain;Reitzenhain;50.5611,13.2194;;;;
-880;Remersdorf;Remersdorf;;;;;
+880;Remersdorf;Renn[sic?]ersdorf;;;;;
 881;Remse;Remse;50.853888888889,12.575555555556;;;;
 882;Rennersdorf;KZ-Außenlager Rennersdorf;51.0172,14.7893;;;(b.;Herrnhut)
 883;Rennersdorf-Neudörfel;Rennersdorf-Neudörfel;51.062908333333,14.066080555556;Q1322311;;;
@@ -586,7 +599,6 @@
 887;Riemsdorf;Riemsdorf;51.1139,13.4833;Q2152255;;;
 888;Riesa;Riesa;51.308055555556,13.293888888889;;;;
 892;Rittersgrün;Rittersgrün;50.473333333333,12.801111111111;Q1284571;;;
-;;;50.48031,12.79336;;;;
 893;Rochlitz;Rochlitz;51.048055555556,12.798611111111;;;;
 894;Röderau;Röderau;51.31916667,13.32166667;;;;
 2007;Rodewisch;Rodewisch;50.5309,12.4049;;;;
@@ -602,17 +614,18 @@
 911;Saalburg;Saalburg;50.5025,11.7336;;;(Thüringen);
 912;Saara;Saara;50.85,11.966666666667;;;(Thüringen);
 913;Saatz;Žatec;49.206395643998,15.508922110031;Q324818;;(Zatec/Böhmen);
+2028;Sachsenhausen,Sachsenhausen concentration camp;52.7671,13.2625;;;;
 914;Sachsgrün;Sachsgrün;50.34488,12.03055;Q34883760;;;
 915;Sacka;Sacka;51.283611111111,13.793161111111;;;;
 916;Sadisdorf;Sadisdorf;50.845469444444,13.635691666667;Q2211164;;;
-917;Salhassan;Salhassan;;;;;
+917;Salhassan;Salhassan (Ort nicht zu finden);;;;;
 918;Salzburg;Salzburg;47.7972,13.04768;;;(Österreich);
 919;Salzenforst;Salzenforst;51.1975,14.371388888889;Q2216043;;;
 920;Sangerhausen;Sangerhausen;51.466666666667,11.3;;;(pr.;Sachsen)
 921;Sankt Egidien;Sankt Egidien;50.785,12.62;;;Egidien;
 922;Sankt Georgenthal;Jiřetín pod Jedlovou;50.874517890076,14.575194251298;;;Georgenthal;(Jiretin
 923;Saupsdorf;Saupsdorf;50.940555555556,14.331111111111;Q2227654;;;
-924;Sayda,;Sayda,;;;;großes;Vorwerk
+924;Sayda,;Sayda, große Vorwerk;50.6944022,13.4565530;;;großes;Vorwerk
 955;Seerhausen;Seerhausen;51.268333333333,13.253888888889;Q1309263;;;
 925;Scheles;Žihle;50.045012324818,13.375089356073;;;(Zihle);
 926;Schenkenberg;Schenkenberg;51.54,12.31333333;;;;
@@ -621,7 +634,6 @@
 929;Schlackenwerth;Ostrov;50.306035004821,12.939153516476;Q987487;;(Ostrov;nad
 930;Schlesiersee;Schlesiersee I concentration camp;51.8833,16.066699;;;(Stawa);
 931;Schlieben;Berga concentration camp;51.73333333,13.38333333;;;(pr.;Sachsen)
-;;;51.716701,13.383299;;;;
 932;Schmiedeberg/D.;Schmiedeberg;50.8375,13.675277777778;;;(b.;Dippoldiswalde)
 933;Schmiedeberg;Kovářská;50.438321578247,13.053974118967;;;(Kovärskä);
 934;Schmorkau;Schmorkau;51.3082,13.144;;;;
@@ -629,14 +641,13 @@
 936;Schönbach/V.;Schönbach (Neumark);50.651936,12.333746;;;;
 937;Schönebeck/Elbe;Schönebeck (Elbe);52.016666666667,11.75;;;(pr.;Sachsen)
 938;Schönfeld/D.;Schönfeld;50.7842,13.6439;;;(b.;Dippoldiswalde)
-939;Schönfeld;Schönfeld;51.303888888889,13.707777777778;;;(b.;Radeburg)
+939;Schönfeld/R.;Schönfeld;51.303888888889,13.707777777778;;;(b.;Radeburg)
 940;Schönheide;Schönheide concentration camp;50.5,12.5333;;;;
 942;Schönlinde;Krásná Lípa;50.913102896533,14.510107117856;;;(Krasna;Lipa/Böhmen)
 943;Schönwald;Lesná u Tachova;49.754294199,12.537726015;;;(Lesnä;u
 951;Schwarzenbach;Schwarzenbach an der Saale;50.22083333333333,11.933333333333334;;;{b.;Hof)
 952;Schwarzenberg;Schwarzenberg;50.545277777778,12.779166666667;;;;
 953;Schwarzheide;Schwarzheide concentration camp;51.485803,13.884804;;;(pr.;Brandenburg)
-;;;51.4833,13.8667;;;;
 954;Sebnitz;Sebnitz;50.966666666667,14.283333333333;;;;
 956;Seesen;Seesen station;51.8875,10.1739;;;;
 957;Seidenberg;Zawidów;51.02615,15.062383333333;;;(Zawidöw);
@@ -644,7 +655,6 @@
 959;Seifhennersdorf;Seifhennersdorf concentration camp;50.9333,14.6167;;;;
 961;Senftenberg;Senftenberg;51.516666666667,14.016666666667;;;(Preußen);
 963;Seyda;Seyda;51.881666666667,12.905277777778;;;(pr.;Sachsen)
-;;;51.881666666667,12.908055555556;;;;
 964;Siebenbrunn;Siebenbrunn;50.3086,12.30278;;;;
 965;Siebenlehn;Siebenlehn;51.031944444444,13.308333333333;Q1274445;;;
 966;Sieglitz;Sieglitz;51.1695,13.4192;;;;
@@ -700,14 +710,16 @@
 1050;Waldheim;Waldheim;51.066666666667,13.016666666667;;;;
 1051;Waldsassen;Waldsassen;50,12.3;Q241889;;;
 1052;Wallenfels;Wallenfels;50.2675,11.473333333333;;;(Bayern);
+2012;Wallern;Volary;48.9088,13.8866;;;;
 1053;Warmsdorf;Warmsdorf;51.777799,11.575903;Q2549410;;(pr.;Sachsen)
 1054;Warnsdorf;Varnsdorf;50.911612411446,14.618353683386;;;(Varnsdorf);
 1055;Weiden;Weiden in der Oberpfalz;49.67353055555556,12.16606111111111;;;;
 1056;Weidenhain;Weidenhain;;;;;
 1057;Weimar;Weimar;50.983333333333,11.316666666667;;;;
 1059;Weipert;Vejprty;50.492422906068,13.032216898187;Q1751518;;(Vejprty);
+2018;Weistropp;Weistropp;51.0859,13.5850;;;;
 1060;Weißbach/Erzgeb.;Weißbach;50.7349,13.0135;;;;
-1061;Weißenberg;Weißenberg;;;;;
+1061;Weißenberg;Weißenberg;51.1977,14.6605;;;;
 1062;Weißenfels;Weißenfels;51.2,11.966666666667;;;;
 1063;Weißensand;Weißensand;50.576107,12.311143;Q26254861;;;
 1064;Weißig;Weißig;50.8376,12.0249;;;(Thüringen);
@@ -737,6 +749,7 @@
 1096;Wurschen;Wurschen;51.193330555556,14.581111111111;;;;
 1097;Wurzen;Wurzen;51.366666666667,12.716666666667;;;;
 1104;Zahna;Zahna;51.916666666667,12.783333333333;;;;
+2024;Neukyhna;Zaasch;51.5518,12.2733;;;;
 1105;Zehista;Zehista;50.940277777778,13.926388888889;Q184505;;(b.;Pirna)
 1106;Zeithain;Zeithain;51.333333333333,13.35;Q8838;;;
 1107;Zeitz;Zeitz;51.047777777778,12.138333333333;;;(Thüringen);
