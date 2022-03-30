@@ -4,9 +4,9 @@ library(osrm)
 library(geojsonio)
 library(shinyjs)
 
-csv <- read.csv(file="C:\\Users\\Fabian\\Documents\\data\\data.csv", encoding="UTF-8")
-locations <- read.csv(file="C:\\Users\\Fabian\\Documents\\data\\locations_matched_osrm.csv", encoding="UTF-8")
-saxony_geojson <- geojson_read("C:\\Users\\Fabian\\Documents\\data\\saxony.geojson")  # source: http://opendatalab.de/projects/geojson-utilities/
+csv <- read.csv(file="data.csv", encoding="UTF-8")
+locations <- read.csv(file="locations_matched_osrm.csv", encoding="UTF-8")
+saxony_geojson <- geojson_read("saxony.geojson")  # source: http://opendatalab.de/projects/geojson-utilities/
 
 data <- list()
 for(i in locations[,1]) {
@@ -120,9 +120,8 @@ ui <- fluidPage(
                           br(),
                           dateRangeInput("time", NULL, start="1945-01-01", end="1945-05-08", language="de", weekstart=1, width="500px"),
                           checkboxInput("osrm", "OSRM", FALSE),
-                          div(style="display: inline-block;vertical-align:top", 
-                              selectInput("route_selector", "Route", choices=csv[["Ort"]]),
-                              checkboxInput("route_only", "Nur ausgewaehlte Route anzeigen: ", FALSE)),
+                          selectInput("route_selector", "Route", choices=csv[["Ort"]]),
+                          checkboxInput("route_only", "Nur ausgewaehlte Route anzeigen: ", FALSE),
                           selectInput("type_selector", "Typ", choices=c("Alle", "Aussenlager in Sachsen" = "Aussenlager", "Maersche durch Sachsen" = "Marsch", "Bahntransporte durch Sachsen" = "Transport")),
                           actionButton("center", "Karte zentrieren"))
   )
