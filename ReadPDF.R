@@ -17,9 +17,5 @@ cat(substr(extracted_texts$text[2], 0, 300))                                    
 cat(substr(extracted_texts$text[2], 0, 1000))                                   #zeigt die ersten 1000 Zeichen des Textes an 
 
 write.csv2(extracted_texts, file = "data/text_extracts.csv", fileEncoding = "UTF-8") #überführen in CSV Datei 
-################################################################################
-textdata <- read.csv("data/text_extracts.csv", header = TRUE, sep = ";", encoding = "UTF-8")
-dim(textdata) #Dimensionen der Tabelle
-colnames(textdata)#Spaltennamen der Tabelle
-################################################################################
+
 
