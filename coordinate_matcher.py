@@ -24,4 +24,6 @@ for index, row in locations.iterrows():
                 pass
             locations.loc[index, "location_lat"] = str(locations.loc[index, "location_lat"]) + " " + str(split_[0])
             locations.loc[index, "location_lng"] = str(locations.loc[index, "location_lng"]) + " " + str(split_[1])
+
+locations.index += 1
 locations.to_csv("locations_matched.csv", index_label="id")
