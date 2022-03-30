@@ -264,16 +264,9 @@ server <- function(input, output, session) {
   observeEvent(input$route_only, { 
     if(selected_route_id != -1) {
       if(input$route_only) {
-        leafletProxy('map') %>% clearMarkers() %>% clearShapes()
-        addRoute(selected_route_id, selected_polyline_color, selected_polyline_width)
+        leafletProxy('map') %>% hideGroup(csv[["id"]][-selected_route_id])
       } else {
-        leafletProxy('map') %>% clearMarkers() %>% clearShapes()
-        for(i in 1:length(data)) {
-          if(i != selected_route_id & csv[[i, "Datum"]] >= input$time[1] & csv[[i, "Datum"]] <= input$time[2]) {
-            addRoute(i, getColor(i), polyline_width)
-          }
-        }
-        addRoute(selected_route_id, selected_polyline_color, selected_polyline_width)
+        leafletProxy('map') %>% showGroup(csv[["id"]][-selected_route_id])
       }
     }
   }, ignoreInit = TRUE)
