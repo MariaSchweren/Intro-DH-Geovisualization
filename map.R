@@ -117,11 +117,14 @@ ui <- fluidPage(
                              textOutput("evakuierung_dauer")))
                 ),
                 mainPanel(leafletOutput("map", height="70vh"),
+                          br(),
                           dateRangeInput("time", NULL, start="1945-01-01", end="1945-05-08", language="de", weekstart=1, width="500px"),
                           checkboxInput("osrm", "OSRM", FALSE),
-                          selectInput("route_selector", "Route", choices=csv[["Ort"]]),
-                          checkboxInput("route_only", "Nur ausgewaehlte Route anzeigen: ", FALSE),
-                          actionButton("center", "Center"))
+                          div(style="display: inline-block;vertical-align:top", 
+                              selectInput("route_selector", "Route", choices=csv[["Ort"]]),
+                              checkboxInput("route_only", "Nur ausgewaehlte Route anzeigen: ", FALSE)),
+                          selectInput("type_selector", "Typ", choices=c("Alle", "Aussenlager in Sachsen" = "Aussenlager", "Maersche durch Sachsen" = "Marsch", "Bahntransporte durch Sachsen" = "Transport")),
+                          actionButton("center", "Karte zentrieren"))
   )
 )
 
@@ -275,6 +278,22 @@ server <- function(input, output, session) {
     route_start <- input$route_selector
     id <- which(csv$Ort == route_start)
     selectRoute(id)
+  }, ignoreInit = TRUE)
+  
+  observeEvent(input$type_selector, { 
+    type <- input$type_selector
+    if(type == "Alle") {
+      leafletProxy('map') %>% showGroup(csv[["id"]])
+    } else if(type == "Aussenlager") {
+      leafletProxy('map') %>% hideGroup(which(csv[["Typ"]] != "Aussenlager"))
+      leafletProxy('map') %>% showGroup(which(csv[["Typ"]] == "Aussenlager"))
+    } else if(type == "Marsch") {
+      leafletProxy('map') %>% hideGroup(which(csv[["Typ"]] != "Marsch"))
+      leafletProxy('map') %>% showGroup(which(csv[["Typ"]] == "Marsch"))
+    } else if(type == "Transport") {
+      leafletProxy('map') %>% hideGroup(which(csv[["Typ"]] != "Transport"))
+      leafletProxy('map') %>% showGroup(which(csv[["Typ"]] == "Transport"))
+    }
   }, ignoreInit = TRUE)
   
   observeEvent(input$time, {
