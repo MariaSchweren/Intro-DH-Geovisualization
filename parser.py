@@ -99,6 +99,10 @@ for index, row in df.iterrows():
 dates = pd.read_csv("dates.csv")
 df["Datum"] = dates["Datum"]  # add formatted dates to dataframe
 
+df["Name"] = df["Name"].str.replace("ß", "ss")
+df["Name"] = df["Name"].str.replace("ü", "ue")
+df["Name"] = df["Name"].str.replace("ö", "oe")
+df["Name"] = df["Name"].str.replace("ä", "ae")
 df = df.fillna("Nicht bekannt.")  # format empty values
 
 df = df.drop(["Betrieb des Rüstungskonzerns", "Rückstellungen", "Verlauf/Orte/Todesopfer", "Orte", "Besonderheiten",
