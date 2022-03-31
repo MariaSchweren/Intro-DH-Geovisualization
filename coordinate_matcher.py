@@ -1,7 +1,7 @@
 import pandas as pd
 import ast
 
-formatted = pd.read_csv("formatted.csv")
+formatted = pd.read_csv("data.csv")
 locations = pd.read_csv("locations.csv")
 coordinates = pd.read_csv("coordinates.csv", sep=";")
 

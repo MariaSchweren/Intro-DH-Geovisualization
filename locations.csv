@@ -3,9 +3,9 @@ Aue,"['Wildenthal', 'Karlsbad']"
 Bautzen,"['Neukirch', 'Steinigtwolmsdorf', 'Neudörfel', 'Wölmsdorf', 'Nixdorf']"
 Böhlen,[]
 Brandhofen,"['Milstrich', 'Schiedel', 'Zschornau', 'Deutschbaselitz', 'Kamenz', 'Bischofswerda', 'Radeberg', 'Fischbach']"
-Chemnitz,[]
+Chemnitz,"['Hilbersdorf', 'Leitmeritz', 'Hertine']"
 Colditz,"['Hausdorf', 'Gersdorf', 'Hartha', 'Waldheim', 'Massanei', 'Reichenbach', 'Etzdorf', 'Nossen', 'zellwald', 'Siebenlehn', 'Kleinvoigtsberg', 'Halsbrücke', 'Conradsdorf', 'Naundorf', 'Nieder-/Oberbobritzsch', 'Kleinbobritzsch', 'Reichenau', 'Rehefeld-Zaunhaus', 'Teplitz-Schönau', 'Welemin', 'Leitmeritz']"
-Bernsdorf/Oberlausitz,"['Neurohlau', 'Alt-Sedlitz']"
+Bernsdorf/Oberlausitz,"['Pirna', 'Zwodau', 'flossenbürg','Neurohlau', 'Alt-Sedlitz']"
 Bernsdorf/Oberlausitz,"['Bad Schandau', 'Tetschen', 'Aussig', 'Theresienstadt']"
 Riesaer Straße,"['Pirna', 'Königstein', 'Peterswald', 'Aussig', 'Leitmeritz']"
 Emerich-Ambros-Ufer,['flossenbürg']
@@ -23,7 +23,7 @@ Hainichen,"['Freiberg', 'Leitmeritz', 'Theresienstadt']"
 Hohenstein-Ernstthal,"['Grüna', 'Reichenbrand', 'Luditz']"
 Johanngeorgenstadt,"['Neurohlau', 'Leitmeritz', 'Theresienstadt']"
 Kamenz,"['Wiesa', 'Elstra', 'Bischofswerda', 'Ebersbach/Oberlausitz', 'Zittau', 'Prag', 'Budweis', 'Mauthausen', 'Dachau']"
-Königstein,"['Leitmeritz', 'Bad Schandau', 'Aussig']"
+Königstein,"['Bad Schandau', 'Aussig', 'Leitmeritz']"
 Leipzig Mitte,"['Leipzig-Abtnaundorf/Heiterblick', 'Taucha', 'Bennewitz', 'Wurzen', 'Oschatz', 'Sieglitz', 'Merschwitz', 'Glaubitz', 'Riesa', 'Dahlen', 'Meltewitz', 'Luppa', 'Mügeln', 'Bahnhof Gärtitz', 'Niederstriegis', 'Freiberg', 'Hilbersdorf', 'Oberbobritzsch', 'Hermsdorf/Erzgebirge', 'Hennersdorf', 'Sadisdorf', 'Altenberg', 'Geising', 'fürstenau']"
 Leipzig-Schönefeld,"['Wurzen', 'Oschatz', 'Merschwitz', 'Glaubitz', 'Riesa', 'Oschatz', 'Döbeln Stadt', 'Nossen', 'Goßberg']"
 Leipzig-Schönefeld,['Leipzig-Abtnaundorf/Heiterblick']
@@ -55,7 +55,7 @@ Torgau,[]
 Venusberg,"['Wilischthal', 'Annaberg/Erzgeb.', 'Komotau', 'Falkenau an der Eger', 'Pladen', 'Ober Birken', 'Pilsen', 'Tachau', 'Haid', 'Taus', 'Budweis', 'Mauthausen']"
 Weißwasser/Oberlausitz,"['Senftenberg', 'Horneburg', 'Bergen-Belsen']"
 Wilischthal,"['Zschopau', 'Wilischthal', 'Leitmeritz', 'Theresienstadt']"
-Wolkenburg,"['Herrnsdorf', 'Uhlsdorf', 'Rüßdorf', 'Bernsdorf', 'Hohndorf', 'Stollberg', 'Zwönitz', 'Grünhain', 'Beierfeld', 'Schwarzenberg', 'Johanngeorgenstadt', 'Karlsbad', 'Waldsassen', 'Neustadt/Sachsen', 'Weiden', 'Irrenlohe', 'Regensburg', 'Dachau']"
+Wolkenburg,"['Herrnsdorf', 'Uhlsdorf', 'Rüßdorf', 'Bernsdorf', 'Hohndorf', 'Stollberg', 'Zwönitz', 'Grünhain', 'Beierfeld', 'Schwarzenberg', 'Johanngeorgenstadt', 'Karlsbad', 'Waldsassen', 'Neustadt/Bayern', 'Weiden', 'Irrenlohe', 'Regensburg', 'Dachau']"
 Zittau,[]
 Zschachwitz,['Leitmeritz']
 Zschopau,"['Wilischthal', 'Annaberg/Erzgeb.', 'Theresienstadt']"
@@ -73,14 +73,14 @@ Schlesiersee,"['Grünberg', 'Bad Muskau', 'Weißwasser/Oberlausitz', 'Nochten', 
 Hadmersleben,"['Aken/Elbe', 'Lobositz']"
 Halbau,"['Rothenburg/Oberlausitz', 'Niesky', 'Bautzen', 'Kamenz', 'Großenhain', 'Riesa', 'Wermsdorf', 'Dehnitz', 'Bennewitz', 'Bergen-Belsen']"
 Halberstadt,"['Könnern', 'Zörbig', 'Bitterfeld', 'Bad Düben', 'Pressel', 'Langenreichenbach', 'Luppa', 'Riesa', 'Deutschenbora', 'Freiberg', 'Brand-Erbisdorf', 'Langenau', 'Borstendorf', 'Grünhainichen', 'Klaffenbach', 'Neukirchen/Erzgeb.', 'Mittelbach', 'Oberlungwitz']"
-Hartmannsdorf,"['Seidenberg', 'Zittau', 'Spitzcunnersdorf', 'Seifhennersdorf', 'Löbau', 'Bautzen', 'Kamenz', 'Königsbrück', 'Glauschnitz', 'Sacka', 'Thiendorf', 'Schönfeld/R.', 'Quersa', 'Adelsdorf', 'Großenhain', 'Wildenhain', 'Glaubitz', 'Zeithain', 'Röderau', 'Lessa', 'Bobersen', 'Gohlis', 'Kleinzschepa', 'Lorenzkirch', 'Strehla', 'Oppitzsch', 'Riesa', 'Gröba', 'Merzdorf', 'Canitz', 'Bornitz', 'Lonnewitz', 'Oschatz', 'Lampersdorf', 'Hubertusburg', 'Wermsdorf', 'Mutzschen', 'Pegau', 'Weißenfels', 'Naumburg', 'Bad Kösen', 'Bad Sulza', 'Apolda', 'Weimar', 'Buchenwald']"
+Hartmannsdorf/M.,"['Seidenberg', 'Zittau', 'Spitzcunnersdorf', 'Seifhennersdorf', 'Löbau', 'Bautzen', 'Kamenz', 'Königsbrück', 'Glauschnitz', 'Sacka', 'Thiendorf', 'Schönfeld/R.', 'Quersa', 'Adelsdorf', 'Großenhain', 'Wildenhain/Sachsen', 'Glaubitz', 'Zeithain', 'Röderau', 'Lessa', 'Bobersen', 'Gohlis', 'Kleinzschepa', 'Lorenzkirch', 'Strehla', 'Oppitzsch', 'Riesa', 'Gröba', 'Merzdorf', 'Canitz', 'Bornitz', 'Lonnewitz', 'Oschatz', 'Lampersdorf', 'Hubertusburg', 'Wermsdorf', 'Mutzschen', 'Pegau', 'Weißenfels', 'Naumburg', 'Bad Kösen', 'Bad Sulza', 'Apolda', 'Weimar', 'Buchenwald']"
 Harzungen,"['Großenhain', 'folbern', 'Radeburg', 'Radeberg', 'Stolpen', 'Sebnitz', 'Hinterhermsdorf', 'Schönlinde', 'Rabstein']"
 Kittlitztreben,"['Bunzlau', 'Görlitz', 'Königshain', 'Weißenberg', 'Bautzen', 'Pulsnitz', 'Langebrück', 'Elbebrücke Dresden', 'Weistropp', 'Hühndorf', 'Blankenstein', 'Neukirchen', 'Krummenhennersdorf', 'Langhennersdorf', 'Bockendorf', 'flöha', 'Erdmannsdorf', 'Dittmannsdorf', 'Gornau', 'Weißbach/Erzgeb.', 'Kemtau', 'Burkhardtsdorf', 'Adorf/Erzgebirge', 'Erlbach-Kirchberg', 'Lichtenstein/Sa.', 'Zwickau', 'Königswalde', 'Lauterbach', 'Mannichswalde', 'Kauern', 'Zwötzen', 'Oberröppisch', 'Weißig', 'Markersdorf/T.', 'Saara', 'Eineborn', 'Ottendorf', 'Altendorf', 'Milda', 'Buchenwald']"
 Langenstein-Zwieberge,"['Bitterfeld', 'Krina', 'Söllichau', 'Trossin', 'Dommitzsch', 'Prettin', 'Wittenberg/Elbe']"
 Lichtenburg,['Hof/S.']
 Neusalz,"['Christianstadt', 'Bad Muskau', 'Nochten', 'Weißwasser/Oberlausitz', 'Bautzen', 'Bischofswerda', 'Helmsdorf', 'Pirna', 'Zehista', 'Karlsbad', 'flossenbürg', 'Leipzig Hauptbahnhof', 'Bergen-Belsen']"
 Schwarzheide,"['Kamenz', 'Bischofswerda', 'Neustadt/Sachsen', 'Rugiswalde', 'Sebnitz', 'Saupsdorf', 'Hinterhermsdorf', 'Schönlinde', 'Warnsdorf', 'Leipa', 'Leitmeritz', 'Theresienstadt']"
-Sonneberg,"['Neuhaus am Rennweg', 'Lehesten', 'Sonneberg', 'Kronach', 'Lobenstein', 'Saalburg', 'Mehltheuer', 'Syrau', 'Neundorf bei Lobenstein', 'Kürbitz', 'Meßbach', 'Pirk', 'Bobenneukirchen', 'Bergen/Adorf', 'Hermsgrün', 'Leubetha', 'Wohlbach', 'Gunzen', 'Rautenkranz', 'Zwota', 'Klingenthal', 'Tannenbergsthal', 'Rautenkranz', 'Carlsfeld']"
+Sonneberg,"['Neuhaus am Rennweg', 'Lehesten', 'Sonneberg', 'Kronach', 'Lobenstein', 'Saalburg', 'Mehltheuer/Sachsen', 'Syrau', 'Neundorf (Plauen)', 'Kürbitz', 'Meßbach', 'Pirk', 'Bobenneukirchen', 'Bergen/Adorf', 'Hermsgrün', 'Leubetha', 'Wohlbach', 'Gunzen', 'Rautenkranz', 'Zwota', 'Klingenthal', 'Tannenbergsthal', 'Rautenkranz', 'Carlsfeld']"
 Neu Staßfurt,"['Warmsdorf', 'Dalena', 'Glebitzsch', 'Zaasch', 'Schenkenberg', 'Delitzsch', 'Lindenhayn', 'Hohenprießnitz', 'Niederglauba', 'Wellaune', 'Bad Düben', 'Görschlitz', 'Kossa', 'Authausen', 'Pressel', 'Wildenhain', 'Mockrehna', 'Oberaudenhain', 'Probsthain', 'Schildau', 'Sitzenroda', 'Lausa', 'Bockwitz', 'Schöna', 'Cavertitz', 'Laas', 'Schmorkau', 'Lonnewitz', 'Bornitz', 'Reppen', 'Raitzen', 'Hof/S.', 'Staucha', 'Altsattel', 'Lommatzsch', 'Großkagen', 'Löthain', 'Riemsdorf', 'Ullendorf', 'Röhrsdorf', 'Sora', 'Wilsdruff', 'Grumbach', 'fördergersdorf', 'Kurort Hartha', 'Grillenburg', 'Klingenberg', 'Obercolmnitz', 'Pretzschendorf', 'Oberbobritzsch', 'Friedersdorf/P.', 'Burkersdorf', 'Nassau', 'Clausnitz', 'Friedebach', 'Sayda', 'Dittersbach', 'Heidersdorf', 'Oberneuschöneberg', 'Olbernhau', 'Ansprung', 'Zöblitz', 'Marienberg', 'Mildenau', 'Annaberg/Erzgeb.']"
 Artern,['Rehmsdorf']
 Brieg,"['Hirschberg', 'Görlitz', 'Dresden', 'Pirna', 'Tetschen', 'Reichenberg', 'Aussig', 'Teplitz-Schönau', 'Komotau', 'Annaberg/Erzgeb.', 'Zwickau', 'Zeitz', 'Halle', 'Nordhausen']"
