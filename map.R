@@ -43,38 +43,40 @@ ui <- fluidPage(
                   h4("Betreiber"),
                   textOutput("betreiber"),
                   div(id="aussenlager", 
+                      h4("Standort des Lagers"),
+                      textOutput("standort_aussenlager"),
                       h4("Dauer des Bestehens"),
-                      textOutput("dauer"),
+                      textOutput("dauer_aussenlager"),
                       h4("Haeftlingsbelegung"),
-                      textOutput("belegung"),
+                      textOutput("belegung_aussenlager"),
                       h4("Unterbringung"),
-                      textOutput("unterbringung"),
+                      textOutput("unterbringung_aussenlager"),
                       h4("Art der Arbeiten"),
-                      textOutput("arbeiten"),
+                      textOutput("arbeiten_aussenlager"),
                       h4("Todesopfer"),
-                      textOutput("todesopfer"),
+                      textOutput("todesopfer_aussenlager"),
                       h4("Rueckueberstellungen"),
-                      textOutput("rueckueberstellungen"),
+                      textOutput("rueckueberstellungen_aussenlager"),
                       h4("Fluchten"),
-                      textOutput("fluchten"),
+                      textOutput("fluchten_aussenlager"),
                       h4("Zugaenge aus anderen Lagern"),
-                      textOutput("zugaenge"),
+                      textOutput("zugaenge_aussenlager"),
                       h4("Evakuierung"),
-                      textOutput("evakuierung"),
+                      textOutput("evakuierung_aussenlager"),
                       h4("Juristische Aufarbeitung"),
-                      textOutput("aufarbeitung"),
+                      textOutput("aufarbeitung_aussenlager"),
                       h4("Besonderheiten der Evakuierung"),
-                      textOutput("evakuierung_besonderheiten"),
+                      textOutput("evakuierung_besonderheiten_aussenlager"),
                       h4("Besonderheiten des Lagers"),
-                      textOutput("lager_besonderheiten"),
+                      textOutput("lager_besonderheiten_aussenlager"),
                       h4("Ende der Evakuierung"),
-                      textOutput("evakuierung_ende"),
+                      textOutput("evakuierung_ende_aussenlager"),
                       h4("Todesopfer/Vorkommnisse"),
-                      textOutput("vorkommnisse"),
+                      textOutput("vorkommnisse_aussenlager"),
                       h4("verlauf/Orte"),
-                      textOutput("verlauf")),
+                      textOutput("verlauf_aussenlager")),
                   hidden(div(id="marsch", 
-                             h4("Starke der Kolonne"),
+                             h4("Staerke der Kolonne"),
                              textOutput("kolonne_marsch"),
                              h4("Beginn der Evakuierung"),
                              textOutput("evakuierung_beginn_marsch"),
@@ -85,17 +87,7 @@ ui <- fluidPage(
                              h4("Ende/Befreiung"),
                              textOutput("ende_marsch"),
                              h4("Besonderheiten"),
-                             textOutput("besonderheiten_marsch"),
-                             h4("Ende der Evakuierung"),
-                             textOutput("evakuierung_ende_marsch"),
-                             h4("Todesopfer/Vorkommnisse"),
-                             textOutput("vorkommnisse_marsch"),
-                             h4("Haeftlingstaerke"),
-                             textOutput("haeftlinge_marsch"),
-                             h4("Juristische Aufarbeitung"),
-                             textOutput("aufarbeitung_marsch"),
-                             h4("Verlauf/Orte"),
-                             textOutput("verlauf_marsch"))),
+                             textOutput("besonderheiten_marsch"))),
                   hidden(div(id="transport", 
                              h4("Haeftlingsstaerke"),
                              textOutput("haeftlinge_transport"),
@@ -108,13 +100,7 @@ ui <- fluidPage(
                              h4("Herkunft"),
                              textOutput("herkunft_transport"),
                              h4("Anzahl Todesopfer"),
-                             textOutput("todesopfer_transport"),
-                             h4("Bekannte Opfer"),
-                             textOutput("bekannte_transport"),
-                             h4("Dauer des Bahntransports"),
-                             textOutput("bahntransport_dauer"),
-                             h4("Dauer der Evakuierung"),
-                             textOutput("evakuierung_dauer")))
+                             textOutput("todesopfer_transport")))
                 ),
                 mainPanel(leafletOutput("map", height="70vh"),
                           br(),
@@ -197,23 +183,23 @@ server <- function(input, output, session) {
       shinyjs::show(id="aussenlager")
       output$name <- renderText({csv$Name[id]})
       output$ort <- renderText({csv$Ort[id]})
-      output$standort <- renderText({csv$Standort.des.Lagers[id]})
       output$betreiber <- renderText({csv$Betreiber[id]})
-      output$dauer <- renderText({csv$Dauer.des.Bestehens[id]})
-      output$belegung <- renderText({csv$H.ftlingsbelegung[id]})
-      output$unterbringung <- renderText({csv$Unterbringung[id]})
-      output$arbeiten <- renderText({csv$Art.der.Arbeiten[id]})
-      output$todesopfer <- renderText({csv$Todesopfer[id]})
-      output$rueckueberstellungen <- renderText({csv$R.ck.berstellungen[id]})
-      output$fluchten <- renderText({csv$Fluchten[id]})
-      output$zugaenge <- renderText({csv$Zug.nge.aus.anderen.Lagern[id]})
-      output$evakuierung <- renderText({csv$Evakuierung[id]})
-      output$aufarbeitung <- renderText({csv$Juristische.Aufarbeitung[id]})
-      output$evakuierung_besonderheiten <- renderText({csv$Besonderheiten.der.Evakuierung[id]})
-      output$lager_besonderheiten <- renderText({csv$Besonderheiten.des.Lagers[id]})
-      output$evakuierung_ende <- renderText({csv$Ende.der.Evakuierung[id]})
-      output$vorkommnisse <- renderText({csv$Todesopfer.Vorkommnisse[id]})
-      output$verlauf <- renderText({csv$Verlauf.Orte[id]})
+      output$standort_aussenlager <- renderText({csv$Standort.des.Lagers[id]})
+      output$dauer_aussenlager <- renderText({csv$Dauer.des.Bestehens[id]})
+      output$belegung_aussenlager <- renderText({csv$H.ftlingsbelegung[id]})
+      output$unterbringung_aussenlager <- renderText({csv$Unterbringung[id]})
+      output$arbeiten_aussenlager <- renderText({csv$Art.der.Arbeiten[id]})
+      output$todesopfer_aussenlager <- renderText({csv$Todesopfer[id]})
+      output$rueckueberstellungen_aussenlager <- renderText({csv$R.ck.berstellungen[id]})
+      output$fluchten_aussenlager <- renderText({csv$Fluchten[id]})
+      output$zugaenge_aussenlager <- renderText({csv$Zug.nge.aus.anderen.Lagern[id]})
+      output$evakuierung_aussenlager <- renderText({csv$Evakuierung[id]})
+      output$aufarbeitung_aussenlager <- renderText({csv$Juristische.Aufarbeitung[id]})
+      output$evakuierung_besonderheiten_aussenlager <- renderText({csv$Besonderheiten.der.Evakuierung[id]})
+      output$lager_besonderheiten_aussenlager <- renderText({csv$Besonderheiten.des.Lagers[id]})
+      output$evakuierung_ende_aussenlager <- renderText({csv$Ende.der.Evakuierung[id]})
+      output$vorkommnisse_aussenlager <- renderText({csv$Todesopfer.Vorkommnisse[id]})
+      output$verlauf_aussenlager <- renderText({csv$Verlauf.Orte[id]})
     } else if(type == "Marsch") {
       shinyjs::hide(id="aussenlager")
       shinyjs::hide(id="transport")
@@ -227,11 +213,7 @@ server <- function(input, output, session) {
       output$evakuierung_weitere_marsch <- renderText({csv$weitere.Evakuierung[id]})
       output$ende_marsch <- renderText({csv$Ende.der.Evakuierung[id]})
       output$besonderheiten_marsch <- renderText({csv$Besonderheiten[id]})
-      output$evakuierung_ende_marsch <- renderText({csv$Ende.der.Evakuierung[id]})
       output$vorkommnisse_marsch <- renderText({csv$Todesopfer.Vorkommnisse[id]})
-      output$haeftlinge_marsch <- renderText({csv$H.ftlingsst.rke[id]})
-      output$aufarbeitung_marsch <- renderText({csv$Juristische.Aufarbeitung[id]})
-      output$verlauf_marsch <- renderText({csv$Verlauf.Orte[id]})
     } else if(type == "Transport") {
       shinyjs::hide(id="aussenlager")
       shinyjs::hide(id="marsch")
@@ -245,9 +227,6 @@ server <- function(input, output, session) {
       output$arbeit_transport <- renderText({csv$Arbeitseinsatz[id]})
       output$herkunft_transport <- renderText({csv$Herkunft[id]})
       output$todesopfer_transport <- renderText({csv$Anzahl.Todesopfer[id]})
-      output$bekannte_transport <- renderText({csv$Bekannte.Opfer[id]})
-      output$bahntransport_dauer <- renderText({csv$Dauer.des.Bahntransports[id]})
-      output$evakuierung_dauer <- renderText({csv$Dauer.der.Evakuierung[id]})
     }
   }
   
