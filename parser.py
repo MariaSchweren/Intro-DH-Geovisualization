@@ -2,7 +2,7 @@ import re
 
 import pandas as pd
 
-with open("text_extracts_aussenlager.csv", "r", encoding="utf8") as file:
+with open("source_data/text_extracts_aussenlager.csv", "r", encoding="utf8") as file:
     text = file.read()
 
 text = text.replace("­", "")  # remove soft hyphen tokens as they break the parser
@@ -44,7 +44,8 @@ for entry in data:
             if counter > 1:
                 value = " ".join(
                     value.split()).strip()  # merge lines after stripping whitespaces in case the source entry consisted of multiple lines
-                rows_dict[key] = value  # add to dictionary
+                if key and value:
+                    rows_dict[key] = value  # add to dictionary
                 value = ""  # reset value because its only modified by appending
             if counter == 0:
                 rows_dict["Name"] = split_[0]
@@ -53,7 +54,10 @@ for entry in data:
                 key = split_[0]
                 value += split_[1]
         else:
-            value += line
+            if len(rows_dict) == 2 and not key:
+                rows_dict["Ort"] += " " + line.strip()
+            else:
+                value += line
     df = df.append(rows_dict, ignore_index=True)
 
 """
