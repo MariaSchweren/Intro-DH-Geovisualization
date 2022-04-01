@@ -1,8 +1,8 @@
-library(shiny)
 library(leaflet)
+library(shiny)
+library(shinyjs)
 library(osrm)
 library(geojsonio)
-library(shinyjs)
 
 csv <- read.csv(file="data.csv", encoding="UTF-8")
 locations <- read.csv(file="locations_matched_osrm.csv", encoding="UTF-8")
@@ -28,11 +28,11 @@ selected_previous_route <- FALSE
 osrm <- FALSE
 selected_route_id <- -1
 
-ui <- fluidPage(
+ui <- fluidPage(  # UI layout
   tags$head(tags$style(type = "text/css", paste0(".selectize-dropdown {
                                                      bottom:100% !important;
                                                      top:auto !important;
-                                                 }}"))),
+                                                 }}"))),  # for upwards opening of dropdown
   shinyjs::useShinyjs(),
   sidebarLayout(position = "right",
                 sidebarPanel(
@@ -116,11 +116,11 @@ ui <- fluidPage(
 server <- function(input, output, session) {
   
   output$map <- renderLeaflet(leaflet() %>% 
-                                addTiles() %>%
-                                setView(lng=13.5, lat=50.95, zoom=8) %>%
-                                addGeoJSON(saxony_geojson, color="blue", fill=FALSE))
+                              addTiles() %>%
+                              setView(lng=13.5, lat=50.95, zoom=8) %>%
+                              addGeoJSON(saxony_geojson, color="blue", fill=FALSE))
   
-  getColor <- function(id) {
+  getColor <- function(id) {  # checks the name of an entry and returns an associated color for easier separation
     name <- csv[id, "Name"]
     if(name == "Aussenlager KZ Flossenbuerg") {
       color <- "orange"
@@ -138,46 +138,39 @@ server <- function(input, output, session) {
     return(color)
   }
   
-  addRoute <- function(id, color, weight) {
-    lat <- as.numeric(data[[id]]$lat[[1]])
+  addRoute <- function(id, color, weight) {  # adds a route with a certain color and thickness to the map
+    lat <- as.numeric(data[[id]]$lat[[1]])  # convert coordinates from string to integers
     lng <- as.numeric(data[[id]]$lng[[1]])
     osrm_lat <- as.numeric(data[[id]]$osrm_lat[[1]])
     osrm_lng <- as.numeric(data[[id]]$osrm_lng[[1]])
-    if(osrm) {
-      if(length(data[[id]]$lat[[1]]) == 1) {
-        leafletProxy('map') %>% 
-          addMarkers(layerId=id, group=as.character(id), lat=lat[1], lng=lng[1], icon=square_green)
+    
+    if(length(data[[id]]$lat[[1]]) == 1) {  # only add a single marker with lines if there's only one coordinate pair
+      leafletProxy('map') %>% 
+        addMarkers(layerId=id, group=as.character(id), lat=lat[1], lng=lng[1], icon=square_green)
+    } else {  # add markers
+      leafletProxy('map') %>% 
+        addMarkers(layerId=id, group=as.character(id), lat=lat[1], lng=lng[1], icon=square_green) %>%
+        addMarkers(layerId=id, group=as.character(id), lat=lat[2:length(lat)], lng=lng[2:length(lat)], icon=square_black)
+      if(osrm) {  # add the corresponding lines depending on OSRM activation
+        leafletProxy('map') %>% addPolylines(layerId=id, group=as.character(id), lat=osrm_lat, lng=osrm_lng, color=color, weight=weight)
       } else {
-        leafletProxy('map') %>% 
-          addMarkers(layerId=id, group=as.character(id), lat=lat[1], lng=lng[1], icon=square_green) %>%
-          addMarkers(layerId=id, group=as.character(id), lat=lat[2:length(lat)], lng=lng[2:length(lat)], icon=square_black) %>%
-          addPolylines(layerId=id, group=as.character(id), lat=osrm_lat, lng=osrm_lng, color=color, weight=weight)
-      }
-    } else {
-      if(length(data[[id]]$lat[[1]]) == 1) {
-        leafletProxy('map') %>% 
-          addMarkers(layerId=id, group=as.character(id), lat=lat[1], lng=lng[1], icon=square_green)
-      } else {
-        leafletProxy('map') %>% 
-          addMarkers(layerId=id, group=as.character(id), lat=lat[1], lng=lng[1], icon=square_green) %>%
-          addMarkers(layerId=id, group=as.character(id), lat=lat[2:length(lat)], lng=lng[2:length(lat)], icon=square_black) %>%
-          addPolylines(layerId=id, group=as.character(id), lat=lat, lng=lng, color=color, weight=weight)
+        leafletProxy('map') %>% addPolylines(layerId=id, group=as.character(id), lat=lat, lng=lng, color=color, weight=weight)
       }
     }
   }
   
   selectRoute <- function(id) {
-    selected_route_id <<- id
-    updateSelectInput(session, "route_selector", selected = csv[id,"Ort"])
+    selected_route_id <<- id  # save current route for other functions
+    updateSelectInput(session, "route_selector", selected = csv[id,"Ort"])  # update dropdown if a route is selected by clicking on the map
     type <- csv[[id, "Typ"]]
-    if(selected_previous_route) {
+    if(selected_previous_route) {  # if a route was previously selected, clear and re-add it with the unselected color
       leafletProxy('map') %>% clearGroup(group=as.character(selected_previous_route))
       addRoute(selected_previous_route, getColor(selected_previous_route), polyline_width)
     }
     selected_previous_route <<- id
-    leafletProxy('map') %>% clearGroup(group=as.character(id))
+    leafletProxy('map') %>% clearGroup(group=as.character(id))  # remove selected route and re-add it with selected color
     addRoute(id, selected_polyline_color, selected_polyline_width)
-    if(type == "Aussenlager") {
+    if(type == "Aussenlager") {  # depending on the type, show the needed sidepanel UI and hide the others
       shinyjs::hide(id="marsch")
       shinyjs::hide(id="transport")
       shinyjs::show(id="aussenlager")
@@ -230,45 +223,45 @@ server <- function(input, output, session) {
     }
   }
   
-  for(i in 1:length(data)) {
+  for(i in 1:length(data)) {  # add all routes to the map
     addRoute(i, getColor(i), polyline_width)
   }
-  selectRoute(1)
+  selectRoute(1)  # first route as default selection
   
-  observeEvent(input$map_marker_click, {
+  observeEvent(input$map_marker_click, {  # observer for route selection when clicking on markers
     p <- input$map_marker_click
     id <- p$id
     selectRoute(id)
   })
   
-  observeEvent(input$map_shape_click, { 
+  observeEvent(input$map_shape_click, {  # observer for route selection when clicking on lines
     p <- input$map_shape_click
     id <- p$id
     selectRoute(id)
   })
   
-  observeEvent(input$route_only, { 
-    if(selected_route_id != -1) {
+  observeEvent(input$route_only, {  # observer for showing only the currently selected route
+    if(selected_route_id != -1) {  # only triggers when a route was selected using selectRoute()
       if(input$route_only) {
-        leafletProxy('map') %>% hideGroup(csv[["id"]][-selected_route_id])
+        leafletProxy('map') %>% hideGroup(csv[["id"]][-selected_route_id])  # hide everything but the current route
       } else {
-        leafletProxy('map') %>% showGroup(csv[["id"]][-selected_route_id])
+        leafletProxy('map') %>% showGroup(csv[["id"]][-selected_route_id])  # show everything but the current route
       }
     }
   }, ignoreInit = TRUE)
   
-  observeEvent(input$route_selector, { 
+  observeEvent(input$route_selector, {  # observer for the dropdown with all available routes
     route_start <- input$route_selector
-    id <- which(csv$Ort == route_start)
-    if(input$route_only & selected_route_id != -1) {
+    id <- which(csv$Ort == route_start)  # get the ID of the entry which matches the name of the selected route
+    if(input$route_only & selected_route_id != -1) {  # for hiding the previously selected route when changing routes via dropdown while in single route mode
       leafletProxy('map') %>% hideGroup(selected_route_id)
       leafletProxy('map') %>% showGroup(id)
     }
     selectRoute(id)
   }, ignoreInit = TRUE)
   
-  observeEvent(input$type_selector, { 
-    type <- input$type_selector
+  observeEvent(input$type_selector, {  # observer for only displaying routes of a certain type
+    type <- input$type_selector  # the type is checked and routes are displayed or hidden correspondingly
     if(type == "Alle") {
       leafletProxy('map') %>% showGroup(csv[["id"]])
     } else if(type == "Aussenlager") {
@@ -283,20 +276,20 @@ server <- function(input, output, session) {
     }
   }, ignoreInit = TRUE)
   
-  observeEvent(input$time, {
+  observeEvent(input$time, {  # observer for showing or hiding routes depending on the evacuation date
     leafletProxy('map') %>% clearMarkers() %>% clearShapes()
     for(i in 1:length(data)) {
-      if(csv[[i, "Evakuierungsbeginn"]] >= input$time[1] & csv[[i, "Evakuierungsbeginn"]] <= input$time[2]) {
+      if(csv[[i, "Evakuierungsbeginn"]] >= input$time[1] & csv[[i, "Evakuierungsbeginn"]] <= input$time[2]) {  # show route if evacuation date is between the picked date range (inclusive)
         addRoute(i, getColor(i), polyline_width)
       }
     }
   }, ignoreInit = TRUE)
   
-  observeEvent(input$center, {
-    leafletProxy('map') %>% setView(lng=13.5, lat=50.95, zoom=8)
+  observeEvent(input$center, {  # observer for returning the map to a view centered on Saxony
+    leafletProxy('map') %>% setView(lng=13.5, lat=50.95, zoom=9)
   }, ignoreInit = TRUE)
   
-  observeEvent(input$osrm, {
+  observeEvent(input$osrm, {  # observer for changing the pathing of the routes to OSRM coordinates and back 
     if(input$osrm) {
       osrm <<- TRUE
       leafletProxy('map') %>% clearShapes()
