@@ -2,7 +2,7 @@ import re
 
 import pandas as pd
 
-with open("source_data/text_extracts_aussenlager.csv", "r", encoding="utf8") as file:
+with open("../source_data/text_extracts_aussenlager.csv", "r", encoding="utf8") as file:
     text = file.read()
 
 text = text.replace("­", "")  # remove soft hyphen tokens as they break the parser
