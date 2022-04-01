@@ -115,10 +115,21 @@ ui <- fluidPage(  # UI layout
 
 server <- function(input, output, session) {
   
+  html_legend <- "<img src='http://www.clipartbest.com/cliparts/nTE/Kyb/nTEKyb8TA.png' style='width:10px;height:10px;'> Start<br/>
+                  <img src='http://www.clipartbest.com/cliparts/niE/yKR/niEyKRyoT.jpeg' style='width:10px;height:10px;'> Zwischenstopp<br/>
+                  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Location_dot_orange.svg/1024px-Location_dot_orange.svg.png' style='width:10px;height:10px;'> KZ Flossenbuerg<br/>
+                  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Location_dot_purple.svg/1024px-Location_dot_purple.svg.png' style='width:10px;height:10px;'> KZ Gross-Rosen<br/>
+                  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Location_dot_green.svg/768px-Location_dot_green.svg.png' style='width:10px;height:10px;'> KZ Buchenwald<br/>
+                  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Location_dot_teal.svg/1024px-Location_dot_teal.svg.png' style='width:10px;height:10px;'> KZ Dora-Mittelbau<br/>
+                  <img src='https://upload.wikimedia.org/wikipedia/commons/4/48/Location_dot_brown200.png' style='width:10px;height:10px;'> KZ Sachsenhausen<br/>
+                  <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Location_dot_red.svg/1024px-Location_dot_red.svg.png' style='width:10px;height:10px;'> Bahnransport<br/>"
+  
   output$map <- renderLeaflet(leaflet() %>% 
                               addTiles() %>%
                               setView(lng=13.5, lat=50.95, zoom=8) %>%
-                              addGeoJSON(saxony_geojson, color="blue", fill=FALSE))
+                              addGeoJSON(saxony_geojson, color="blue", fill=FALSE) %>%
+                              addControl(html = html_legend, position = "bottomright")
+                                )
   
   getColor <- function(id) {  # checks the name of an entry and returns an associated color for easier separation
     name <- csv[id, "Name"]
