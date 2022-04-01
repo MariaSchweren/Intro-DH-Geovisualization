@@ -73,7 +73,7 @@ ui <- fluidPage(
                       textOutput("evakuierung_ende_aussenlager"),
                       h4("Todesopfer/Vorkommnisse"),
                       textOutput("vorkommnisse_aussenlager"),
-                      h4("verlauf/Orte"),
+                      h4("Verlauf/Orte"),
                       textOutput("verlauf_aussenlager")),
                   hidden(div(id="marsch", 
                              h4("Staerke der Kolonne"),
@@ -124,10 +124,14 @@ server <- function(input, output, session) {
     name <- csv[id, "Name"]
     if(name == "Aussenlager KZ Flossenbuerg") {
       color <- "orange"
-    } else if(name == "Aussenlager KZ Gross-Rosen") {
+    } else if(name == "Aussenlager KZ Gross-Rosen" || name == "Aussenlager des KZ Gross-Rosen") {
       color <- "purple"
-    } else if(name == "Aussenlager KZ Buchenwald") {
+    } else if(name == "Aussenlager KZ Buchenwald" || name == "Aussenlager des KZ Buchenwald") {
       color <- "green"
+    } else if(name == "Aussenlager KZ Dora-Mittelbau" || name == "Aussenlager des KZ Dora-Mittelbau") {
+      color <- "teal"
+    } else if(name == "Aussenlager KZ Sachsenhausen")  {
+      color <- "brown"
     } else {
       color <- "red"
     }
@@ -277,7 +281,7 @@ server <- function(input, output, session) {
   observeEvent(input$time, {
     leafletProxy('map') %>% clearMarkers() %>% clearShapes()
     for(i in 1:length(data)) {
-      if(csv[[i, "Datum"]] >= input$time[1] & csv[[i, "Datum"]] <= input$time[2]) {
+      if(csv[[i, "Evakuierungsbeginn"]] >= input$time[1] & csv[[i, "Evakuierungsbeginn"]] <= input$time[2]) {
         addRoute(i, getColor(i), polyline_width)
       }
     }
@@ -292,7 +296,7 @@ server <- function(input, output, session) {
       osrm <<- TRUE
       leafletProxy('map') %>% clearShapes()
       for(i in 1:length(data)) {
-        if(csv[[i, "Datum"]] >= input$time[1] & csv[[i, "Datum"]] <= input$time[2]) {
+        if(csv[[i, "Evakuierungsbeginn"]] >= input$time[1] & csv[[i, "Evakuierungsbeginn"]] <= input$time[2]) {
           addRoute(i, getColor(i), polyline_width)
         }
       }
@@ -300,7 +304,7 @@ server <- function(input, output, session) {
       osrm <<- FALSE
       leafletProxy('map') %>% clearMarkers() %>% clearShapes()
       for(i in 1:length(data)) {
-        if(csv[[i, "Datum"]] >= input$time[1] & csv[[i, "Datum"]] <= input$time[2]) {
+        if(csv[[i, "Evakuierungsbeginn"]] >= input$time[1] & csv[[i, "Evakuierungsbeginn"]] <= input$time[2]) {
           addRoute(i, getColor(i), polyline_width)
         }
       }
