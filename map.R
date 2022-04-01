@@ -21,17 +21,17 @@ for(i in locations[,1]) {
 square_black <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/niE/yKR/niEyKRyoT.jpeg", iconWidth = 5, iconHeight = 5)
 square_green <- makeIcon(iconUrl = "http://www.clipartbest.com/cliparts/nTE/Kyb/nTEKyb8TA.png", iconWidth = 10, iconHeight = 10)
 polyline_color <- "red"
-selected_polyline_color <- "black"
 polyline_width <- 3
+selected_polyline_color <- "black"
 selected_polyline_width <- 6
-prev <- FALSE
+selected_previous_route <- FALSE
 osrm <- FALSE
 selected_route_id <- -1
 
 ui <- fluidPage(
   tags$head(tags$style(type = "text/css", paste0(".selectize-dropdown {
-                                                     bottom: 100% !important;
-                                                     top:auto!important;
+                                                     bottom:100% !important;
+                                                     top:auto !important;
                                                  }}"))),
   shinyjs::useShinyjs(),
   sidebarLayout(position = "right",
@@ -166,19 +166,15 @@ server <- function(input, output, session) {
     }
   }
   
-  for(i in 1:length(data)) {
-    addRoute(i, getColor(i), polyline_width)
-  }
-  
   selectRoute <- function(id) {
     selected_route_id <<- id
     updateSelectInput(session, "route_selector", selected = csv[id,"Ort"])
     type <- csv[[id, "Typ"]]
-    if(prev) {
-      leafletProxy('map') %>% clearGroup(group=as.character(prev))
-      addRoute(prev, getColor(prev), polyline_width)
+    if(selected_previous_route) {
+      leafletProxy('map') %>% clearGroup(group=as.character(selected_previous_route))
+      addRoute(selected_previous_route, getColor(selected_previous_route), polyline_width)
     }
-    prev <<- id
+    selected_previous_route <<- id
     leafletProxy('map') %>% clearGroup(group=as.character(id))
     addRoute(id, selected_polyline_color, selected_polyline_width)
     if(type == "Aussenlager") {
@@ -234,6 +230,11 @@ server <- function(input, output, session) {
     }
   }
   
+  for(i in 1:length(data)) {
+    addRoute(i, getColor(i), polyline_width)
+  }
+  selectRoute(1)
+  
   observeEvent(input$map_marker_click, {
     p <- input$map_marker_click
     id <- p$id
@@ -259,6 +260,10 @@ server <- function(input, output, session) {
   observeEvent(input$route_selector, { 
     route_start <- input$route_selector
     id <- which(csv$Ort == route_start)
+    if(input$route_only & selected_route_id != -1) {
+      leafletProxy('map') %>% hideGroup(selected_route_id)
+      leafletProxy('map') %>% showGroup(id)
+    }
     selectRoute(id)
   }, ignoreInit = TRUE)
   
