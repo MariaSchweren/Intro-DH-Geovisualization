@@ -17,5 +17,3 @@ cat(substr(extracted_texts$text[2], 0, 300))                                    
 cat(substr(extracted_texts$text[2], 0, 1000))                                        #zeigt die ersten 1000 Zeichen des Textes an 
 
 write.csv2(extracted_texts, file = "data/text_extracts.csv", fileEncoding = "UTF-8") #überführen in CSV Datei 
-
-
