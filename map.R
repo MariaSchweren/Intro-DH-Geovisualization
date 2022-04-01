@@ -302,7 +302,11 @@ server <- function(input, output, session) {
       leafletProxy('map') %>% clearShapes()
       for(i in 1:length(data)) {
         if(csv[[i, "Evakuierungsbeginn"]] >= input$time[1] & csv[[i, "Evakuierungsbeginn"]] <= input$time[2]) {
-          addRoute(i, getColor(i), polyline_width)
+          if(i == selected_route_id) {
+            addRoute(i, selected_polyline_color, selected_polyline_width)
+          } else {
+            addRoute(i, getColor(i), polyline_width)
+          }
         }
       }
     } else {
@@ -310,7 +314,11 @@ server <- function(input, output, session) {
       leafletProxy('map') %>% clearMarkers() %>% clearShapes()
       for(i in 1:length(data)) {
         if(csv[[i, "Evakuierungsbeginn"]] >= input$time[1] & csv[[i, "Evakuierungsbeginn"]] <= input$time[2]) {
-          addRoute(i, getColor(i), polyline_width)
+          if(i == selected_route_id) {
+            addRoute(i, selected_polyline_color, selected_polyline_width)
+          } else {
+            addRoute(i, getColor(i), polyline_width)
+          }
         }
       }
     }
